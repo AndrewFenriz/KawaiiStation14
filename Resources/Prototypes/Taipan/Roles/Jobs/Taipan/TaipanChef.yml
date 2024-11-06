@@ -1,6 +1,6 @@
 - type: job
   id: TaipanChef
-  name: Повар
+  name: повар
   playTimeTracker: TaipanChef
   description: Вы готовите блюда для экипажа и поддерживаете порядок на кухне станции Тайпан.
   startingGear: TaipanChefGear
@@ -20,7 +20,7 @@
   equipment:
     ears: ClothingHeadsetTaipan
     jumpsuit: ClothingUniformJumpsuitTaipanChef
-    back: ClothingBackpackStandard
-    outerClothing: ClothingOuterApronTaipanChef
-    shoes: ClothingShoesColorBlack
+    back: ClothingBackpack
+    outerClothing: ClothingOuterJacketChef
+    shoes: ClothingShoesBootsLaceup
     id: TaipanChefPDA

@@ -1,6 +1,6 @@
 - type: job
   id: TaipanCargotech
-  name: Карготехник
+  name: карготехник
   playTimeTracker: TaipanCargotech
   description: Вы отвечает за управление грузовыми процессами и доставку по станции.
   startingGear: TaipanCargotechGear
@@ -22,6 +22,7 @@
   equipment:
     ears: ClothingHeadsetTaipan
     jumpsuit: ClothingUniformJumpsuitTaipanCargotech
-    back: ClothingBackpackStandard
-    shoes: ClothingShoesBootsTaipan
+    back: ClothingBackpackSalvage
+    shoes: ClothingShoesBootsWork
+    belt: ClothingBeltSalvageWebbing
     id: TaipanCargotechPDA

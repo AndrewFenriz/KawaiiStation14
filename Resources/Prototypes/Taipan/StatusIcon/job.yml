@@ -1,0 +1,95 @@
+- type: jobIcon
+  id: JobIconTaipanAtmosphericsEngineer
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: AtmosphericEngineer
+  jobName: TaipanAtmosphericsEngineer  # Используем идентификатор роли
+
+- type: jobIcon
+  id: JobIconTaipanBotanist
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: Botanist
+  jobName: TaipanBotanist
+
+- type: jobIcon
+  id: JobIconTaipanCargotech
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: CargoTechnician
+  jobName: TaipanCargotech
+
+- type: jobIcon
+  id: JobIconTaipanChef
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: Chef
+  jobName: TaipanChef
+
+- type: jobIcon
+  id: JobIconTaipanMedicalDoctor
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: Doctor
+  jobName: TaipanMedicalDoctor
+
+- type: jobIcon
+  id: JobIconTaipanParamedic
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: Paramedic
+  jobName: TaipanParamedic
+
+- type: jobIcon
+  id: JobIconTaipanResearchDirector
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: ResearchDirector
+  jobName: TaipanResearchDirector
+
+- type: jobIcon
+  id: JobIconTaipanRecruit
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: Recruit
+  jobName: TaipanRecruit
+
+- type: jobIcon
+  id: JobIconTaipanScientist
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: Scientist
+  jobName: TaipanScientist
+
+- type: jobIcon
+  id: JobIconTaipanStationEngineer
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: Engineer
+  jobName: TaipanStationEngineer
+
+- type: jobIcon
+  id: JobIconTaipanTechnicalOperationsSupervisor
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: TechnicalSupervisor
+  jobName: TaipanTechnicalOperationsSupervisor
+
+- type: jobIcon
+  id: JobIconTaipanCommunicationsOfficer
+  parent: JobIcon
+  icon:
+    sprite: /Textures/Taipan/Interface/job_icons.rsi
+    state: CommunicationOfficer
+  jobName: TaipanCommunicationsOfficer

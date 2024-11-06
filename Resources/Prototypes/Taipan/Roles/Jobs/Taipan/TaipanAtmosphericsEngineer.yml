@@ -1,10 +1,10 @@
 - type: job
-  id: TaipanAtmosTech
-  name: Атмосферный инженер
-  playTimeTracker: TaipanAtmosTech
+  id: TaipanAtmosphericsEngineer
+  name: атмосферный инженер
+  playTimeTracker: TaipanAtmosphericsEngineer
   description: Отвечает за управление и обслуживание всех систем атмосферы на станции Тайпан.
   startingGear: TaipanAtmosGear
-  icon: "JobIconAtmosphericEngineer"
+  icon: "JobIconTaipanAtmosphericsEngineer"
   supervisors: job-supervisors-typan-telecommunications-officer
   canBeAntag: false
   requirements:
@@ -21,7 +21,7 @@
   equipment:
     ears: ClothingHeadsetTaipan
     jumpsuit: ClothingUniformJumpsuitTaipanAtmos
-    shoes: ClothingShoesBootsTaipan
-    back: ClothingBackpackEngineer
+    shoes: ClothingShoesBootsWork
+    back: ClothingBackpackAtmospherics
     belt: ClothingBeltUtilityEngineering
     id: TaipanAtmosphericsEngineerPDA

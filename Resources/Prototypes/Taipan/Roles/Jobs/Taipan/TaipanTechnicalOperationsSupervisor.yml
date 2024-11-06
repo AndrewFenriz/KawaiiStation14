@@ -1,8 +1,8 @@
 - type: job
   id: TaipanTechnicalOperationsSupervisor
-  name: Руководитель технических операций
+  name: руководитель техобеспечения
   playTimeTracker: TaipanTechnicalOperationsSupervisor
-  description: Вы управляете инженерными проектами и поддерживаете работоспособность станции Тайпан.
+  description: Вы управляете финансами станции Тайпан.
   startingGear: TaipanTechnicalOperationsSupervisorGear
   icon: "JobIconTaipanTechnicalOperationsSupervisor"
   supervisors: job-supervisors-captain
@@ -25,8 +25,8 @@
   equipment:
     ears: ClothingHeadsetAltTaipan
     jumpsuit: ClothingUniformJumpsuitTaipanTechnicalSupervisor
-    outerClothing: ClothingOuterCoatEngineering
-    shoes: ClothingShoesEngineering
+    outerClothing: ClothingOuterCoatSyndieCap
+    shoes: ClothingShoesBootsLaceup
     id: TaipanTechnicalOperationsSupervisorPDA
-    back: ClothingBackpackStandard
+    back: ClothingBackpackSyndicate
     belt: ClothingBeltUtilityEngineering

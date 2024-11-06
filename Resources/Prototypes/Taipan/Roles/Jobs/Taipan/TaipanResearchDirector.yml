@@ -1,6 +1,6 @@
 - type: job
   id: TaipanResearchDirector
-  name: Директор исследований
+  name: директор исследований
   playTimeTracker: TaipanResearchDirector
   description: Вы руководите научными проектами и управляете командой ученых на станции Тайпан.
   startingGear: TaipanResearchDirectorGear
@@ -26,10 +26,10 @@
   equipment:
     eyes: ClothingEyesGlasses
     ears: ClothingHeadsetAltTaipan
-    shoes: ClothingShoesDress
-    outerClothing: ClothingOuterCoatTaipanRD
-    gloves: ClothingHandsTaipanRD
+    shoes: ClothingShoesBootsLaceup
+    outerClothing: ClothingOuterCoatRobo
+    gloves: ClothingHandsGlovesRobohands
     id: TaipanResearchDirectorPDA
-    back: ClothingBackpackStandard
+    back: ClothingBackpackSyndicate
     jumpsuit: ClothingUniformJumpsuitTaipanResearchDirector
     belt: ClothingBeltUtilityEngineering

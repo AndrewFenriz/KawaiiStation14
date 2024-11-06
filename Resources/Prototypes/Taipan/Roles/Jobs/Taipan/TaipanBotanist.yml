@@ -1,6 +1,6 @@
 - type: job
   id: TaipanBotanist
-  name: Ботаник
+  name: ботаник
   playTimeTracker: TaipanBotanist
   description: Вы заботитесь о растениях станции и их выращивании, чтобы обеспечить экипаж свежей продукцией.
   startingGear: TaipanBotanistGear
@@ -20,6 +20,7 @@
   equipment:
     ears: ClothingHeadsetTaipan
     jumpsuit: ClothingUniformJumpsuitTaipanBotanist
-    back: ClothingBackpackStandard
-    shoes: ClothingShoesColorBrown
+    back: ClothingBackpack
+    shoes: ClothingShoesBootsLaceup
+    belt: ClothingBeltPlantFilled
     id: TaipanBotanistPDA

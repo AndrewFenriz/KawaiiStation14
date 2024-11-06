@@ -1,6 +1,6 @@
 - type: job
   id: TaipanScientist
-  name: Учёный
+  name: учёный
   playTimeTracker: TaipanScientist
   description: Вы проводите исследования и эксперименты, развивая научные знания на станции Тайпан.
   startingGear: TaipanScientistGear
@@ -20,8 +20,8 @@
   equipment:
     ears: ClothingHeadsetTaipan
     jumpsuit: ClothingUniformJumpsuitTaipanScientist
-    outerClothing: ClothingOuterCoatLabOpenedTaipan
-    gloves: ClothingHandsTaipanScientist
-    shoes: ClothingShoesColorBlack
-    back: ClothingBackpackStandard
+    outerClothing: ClothingOuterCoatRnd
+    gloves: ClothingHandsGlovesLatex
+    shoes: ClothingShoesBootsLaceup
+    back: ClothingBackpackSyndicate
     id: TaipanScientistPDA

@@ -1,10 +1,10 @@
 - type: job
   id: TaipanStationEngineer
-  name: Ремонтник
+  name: ремонтник
   playTimeTracker: TaipanStationEngineer
   description: Вы отвечаете за ремонт и модернизацию инфраструктуры станции Тайпан.
   startingGear: TaipanStationEngineerGear
-  icon: "JobIconTaipanEngineer"
+  icon: "JobIconTaipanStationEngineer"
   supervisors: job-supervisors-chief-engineer
   canBeAntag: false
   requirements:
@@ -21,8 +21,8 @@
   equipment:
     ears: ClothingHeadsetTaipan
     jumpsuit: ClothingUniformJumpsuitTaipanStationEngineer
-    outerClothing: ClothingOuterJacketEngineer
-    shoes: ClothingShoesEngineering
+    outerClothing: ClothingOuterVestHazard
+    shoes: ClothingShoesBootsWork
     id: TaipanStationEngineerPDA
-    back: ClothingBackpackStandard
+    back: ClothingBackpackEngineering
     belt: ClothingBeltUtilityEngineering

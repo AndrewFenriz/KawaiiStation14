@@ -1,10 +1,10 @@
 - type: job
-  id: TaipanTelecommunicationsOfficer
-  name: Офицер телекоммуникаций
-  playTimeTracker: TaipanTelecommunicationsOfficer
+  id: TaipanCommunicationsOfficer
+  name: офицер телекоммуникаций
+  playTimeTracker: TaipanCommunicationsOfficer
   description: Вы управляете системами связи и координацией информации на станции Тайпан.
-  startingGear: TaipanTelecommunicationsOfficerGear
-  icon: "JobIconTaipanTelecommunicationsOfficer"
+  startingGear: TaipanCommunicationsOfficerGear
+  icon: "JobIconTaipanCommunicationsOfficer"
   supervisors: job-supervisors-captain
   canBeAntag: false
   requirements:
@@ -31,15 +31,13 @@
   - AllAccess
 
 - type: startingGear
-  id: TaipanTelecommunicationsOfficerGear
+  id: TaipanCommunicationsOfficerGear
   equipment:
-    eyes: ClothingEyesHudTaipan
+    eyes: ClothingEyesHudSyndicate
     ears: ClothingHeadsetAltTaipan
-    shoes: ClothingShoesDress
-    jumpsuit: ClothingUniformJumpsuitTaipanFormal
-    gloves: ClothingHandsGlovesWhite
+    shoes: ClothingShoesBootsSyndieFilled
+    jumpsuit: ClothingUniformJumpsuitTaipanCommunicationsOfficer
+    gloves: ClothingHandsGlovesCombat
     id: TaipanCommunicationsOfficerPDA
-    back: ClothingBackpackStandard
-    belt: ClothingBeltUtility
-    pocket1: TaipanWhistle
-    pocket2: ClothingMaskGasTaipan
+    back: ClothingBackpackSyndicate
+    belt: ClothingBeltAssault

@@ -169,3 +169,51 @@
     sprite: Taipan/Clothing/Uniforms/Jumpskirt/supervisor_jumpskirt.rsi
   - type: Clothing
     sprite: Taipan/Clothing/Uniforms/Jumpskirt/supervisor_jumpskirt.rsi
+
+# Медик
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTaipanMedic
+  name: комбинезон медика
+  description: Белый медицинский комбинезон, подходящий для оказания медицинской помощи и диагностики.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Uniforms/Jumpsuit/medic_jumpsuit.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Uniforms/Jumpsuit/medic_jumpsuit.rsi
+
+# Парамедик
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTaipanParamedic
+  name: комбинезон парамедика
+  description: Практичный комбинезон для парамедиков, идеально подходящий для экстренной медицины.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Uniforms/Jumpsuit/paramedic_jumpsuit.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Uniforms/Jumpsuit/paramedic_jumpsuit.rsi
+
+# Учёный
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTaipanScientist
+  name: комбинезон учёного
+  description: Униформа учёного, подходящая для лабораторных исследований и экспериментов.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Uniforms/Jumpsuit/scientist_jumpsuit.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Uniforms/Jumpsuit/scientist_jumpsuit.rsi
+
+# Ремонтник
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTaipanStationEngineer
+  name: комбинезон ремонтника
+  description: Комбинезон для инженерных задач, усиленный для работы в тяжёлых условиях.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Uniforms/Jumpsuit/engineer_jumpsuit.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Uniforms/Jumpsuit/engineer_jumpsuit.rsi

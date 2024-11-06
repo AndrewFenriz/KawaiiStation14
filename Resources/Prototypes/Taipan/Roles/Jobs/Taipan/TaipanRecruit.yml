@@ -1,6 +1,6 @@
 ﻿- type: job
   id: TaipanRecruit
-  name: Рекрут
+  name: рекрут
   playTimeTracker: TaipanRecruit
   description: Новобранец, готовый обучаться и поддерживать безопасность на станции Тайпан.
   startingGear: TaipanRecruitGear
@@ -20,7 +20,7 @@
   equipment:
     ears: ClothingHeadsetTaipan
     jumpsuit: ClothingUniformJumpsuitTaipanRecruit
-    shoes: ClothingShoesSecurity
+    shoes: ClothingShoesBootsSyndieFilled
     id: TaipanRecruitPDA
-    back: ClothingBackpackSecurity
-    belt: ClothingBeltUtilitySecurity
+    back: ClothingBackpackSyndicate
+    belt: ClothingBeltAssault
