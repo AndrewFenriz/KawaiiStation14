@@ -1,0 +1,29 @@
+# Офицер телекоммуникаций
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakCommunicationsOfficer
+  name: плащ офицера телекоммуникаций
+  description: Тёмный плащ с багровыми знаками отличия и золотой вышивкой. Выглядит одновременно роскошно и зловеще.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Neck/co_cloak.rsi
+
+# Директор исследований
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakResearchDirector
+  name: плащ директора исследований
+  description: Роскошный плащ, символизирующий статус и власть в научном подразделении.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Neck/rd_cloak.rsi
+
+# Руководитель технических операций
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakTechnicalOperationsSupervisor
+  name: плащ руководителя техобеспечения
+  description: Элегантный плащ для работников, управляющих техническими аспектами станции.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Neck/supervisor_cloak.rsi

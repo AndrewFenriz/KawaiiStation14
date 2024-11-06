@@ -1,0 +1,22 @@
+- type: job
+  id: TaipanPrisoner
+  name: Заключённый
+  playTimeTracker: TaipanPrisoner
+  description: Вы — объект для исследований на станции Тайпан. Выживание — ваша главная задача.
+  startingGear: TaipanPrisonerGear
+  icon: "JobIconTaipanPrisoner"
+  supervisors: job-supervisors-research-director
+  canBeAntag: true
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 0
+  access:
+  - Maint
+
+- type: startingGear
+  id: TaipanPrisonerGear
+  equipment:
+    jumpsuit: ClothingUniformPrisoner
+    shoes: ClothingShoesColorOrange
+    id: TaipanPrisonerID
+    back: ClothingBackpackStandard

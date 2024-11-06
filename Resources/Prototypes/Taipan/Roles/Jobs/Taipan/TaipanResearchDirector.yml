@@ -1,0 +1,35 @@
+- type: job
+  id: TaipanResearchDirector
+  name: Директор исследований
+  playTimeTracker: TaipanResearchDirector
+  description: Вы руководите научными проектами и управляете командой ученых на станции Тайпан.
+  startingGear: TaipanResearchDirectorGear
+  icon: "JobIconTaipanResearchDirector"
+  supervisors: job-supervisors-captain
+  canBeAntag: false
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 60000
+    - !type:OverallPlaytimeRequirement
+      time: 150000
+    - !type:AgeRequirement
+      requiredAge: 24
+  access:
+  - TaipanBasic
+  - TaipanScience
+  - TaipanCommand
+  - TaipanResearchDirector
+
+- type: startingGear
+  id: TaipanResearchDirectorGear
+  equipment:
+    eyes: ClothingEyesGlasses
+    ears: ClothingHeadsetAltTaipan
+    shoes: ClothingShoesDress
+    outerClothing: ClothingOuterCoatTaipanRD
+    gloves: ClothingHandsTaipanRD
+    id: TaipanResearchDirectorPDA
+    back: ClothingBackpackStandard
+    jumpsuit: ClothingUniformJumpsuitTaipanResearchDirector
+    belt: ClothingBeltUtilityEngineering

@@ -1,0 +1,32 @@
+- type: job
+  id: TaipanTechnicalOperationsSupervisor
+  name: Руководитель технических операций
+  playTimeTracker: TaipanTechnicalOperationsSupervisor
+  description: Вы управляете инженерными проектами и поддерживаете работоспособность станции Тайпан.
+  startingGear: TaipanTechnicalOperationsSupervisorGear
+  icon: "JobIconTaipanTechnicalOperationsSupervisor"
+  supervisors: job-supervisors-captain
+  canBeAntag: false
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 60000
+    - !type:OverallPlaytimeRequirement
+      time: 120000
+    - !type:AgeRequirement
+      requiredAge: 25
+  access:
+  - TaipanBasic
+  - TaipanEngineering
+  - TaipanCommand
+
+- type: startingGear
+  id: TaipanTechnicalOperationsSupervisorGear
+  equipment:
+    ears: ClothingHeadsetAltTaipan
+    jumpsuit: ClothingUniformJumpsuitTaipanTechnicalSupervisor
+    outerClothing: ClothingOuterCoatEngineering
+    shoes: ClothingShoesEngineering
+    id: TaipanTechnicalOperationsSupervisorPDA
+    back: ClothingBackpackStandard
+    belt: ClothingBeltUtilityEngineering

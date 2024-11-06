@@ -1,0 +1,21 @@
+- type: department
+  id: Taipan
+  name: ННКСС Тайпан
+  description: Научно-наблюдательная исследовательская станция Синдиката. Данный объект является сверхсекретным.
+  color: "#87181c"
+  roles:
+  - TaipanAtmosphericsEngineer
+  - TaipanBotanist
+  - TaipanChef
+  - TaipanTechnicalOperationsSupervisor
+  - TaipanCommunicationsOfficer
+  - TaipanMedicalDoctor
+  - TaipanParamedic
+  - TaipanRecruit
+  - TaipanResearchDirector
+  - TaipanScientist
+  - TaipanStationEngineer
+  - TaipanCargotech
+  editorHidden: false
+  primary: false
+  weight: 10

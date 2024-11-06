@@ -1,0 +1,99 @@
+- type: job
+  id: AdaxEVOLeader
+  name: Лидер отряда Адакс EVO
+  description: Вы руководите отрядом Адакс EVO, специализирующимся на устранении биологических угроз.
+  playTimeTracker: AdaxEVOLeader
+  setPreference: false
+  startingGear: AdaxEVOLeaderGear
+  icon: "JobIconNanotrasenRed"
+  supervisors: job-supervisors-taipan-command
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - TaipanCommand
+  - TaipanScience
+  - TaipanSecurity
+
+- type: startingGear
+  id: AdaxEVOLeaderGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBrown
+    back: ClothingMilitaryBackpack
+    mask: ClothingMaskGasExplorer
+    eyes: ClothingEyesHudAdvanced
+    ears: ClothingHeadsetSOC
+    neck: ClothingNeckMantleAdaxEVOLeader
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURNLeader
+    shoes: ClothingShoesBootsCombatFilled
+    id: CBURNLeaderPDA
+    suitstorage: AirTankFilled
+    belt: ClothingBeltMilitaryWebbing
+  storage:
+    back:
+    - WeaponShotgunKammerer
+    - GrenadeIncendiary
+    - PillCanisterAdaxEVO
+    - CrowbarRed
+    - WeaponFlareGun
+    - BoxShotgunFlare
+    - MagazineShotgun
+    - MagazineShotgunSlug
+    - MagazineShotgunIncendiary
+    - MagazineShotgunBeanbag
+    - EmergencyMedipen
+    - BoxMRE
+    - PinpointerNuclear
+    - WeaponLaserSvalinn
+    - PowerCellSmall
+    - PowerCellMedium
+
+- type: job
+  id: AdaxEVOAgent
+  name: Агент отряда Адакс EVO
+  description: Вы являетесь важным членом команды Адакс EVO, специализирующейся на устранении биологических угроз.
+  playTimeTracker: AdaxEVOAgent
+  setPreference: false
+  startingGear: AdaxEVOAgentGear
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-taipan-command
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - TaipanCommand
+  - TaipanScience
+  - TaipanSecurity
+
+- type: startingGear
+  id: AdaxEVOAgentGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBrown
+    back: ClothingMilitaryBackpack
+    mask: ClothingMaskGasExplorer
+    eyes: ClothingEyesHudAdvanced
+    ears: ClothingHeadsetSOC
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURN
+    shoes: ClothingShoesBootsCombatFilled
+    id: CBURNPDA
+    suitstorage: AirTankFilled
+    belt: ClothingBeltMilitaryWebbing
+  storage:
+    back:
+    - WeaponShotgunKammerer
+    - GrenadeIncendiary
+    - CrowbarRed
+    - WeaponFlareGun
+    - BoxShotgunFlare
+    - MagazineShotgun
+    - MagazineShotgunSlug
+    - MagazineShotgunIncendiary
+    - MagazineShotgunBeanbag
+    - EmergencyMedipen
+    - BoxMRE
+    - WeaponDisabler
+    - WeaponLaserSvalinn
+    - PowerCellSmall
+    - PowerCellMedium

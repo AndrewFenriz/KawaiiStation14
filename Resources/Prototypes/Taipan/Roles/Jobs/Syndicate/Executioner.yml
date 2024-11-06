@@ -1,0 +1,100 @@
+- type: job
+  id: Executioner
+  name: Каратель
+  description: Вы — член элитного отряда, которого вызывают, когда станции грозит конец.
+  playTimeTracker: JobExecutioner
+  setPreference: false
+  startingGear: ExecutionerGear
+  icon: "JobIconExecutioner"
+  supervisors: job-supervisors-command
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - TaipanCommand
+  - TaipanSecurity
+
+- type: startingGear
+  id: ExecutionerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitExecutioner
+    back: ClothingExecutionerBackpack
+    mask: ClothingMaskGasExecutioner
+    eyes: ClothingEyesHudAdvanced
+    ears: ClothingHeadsetExecutioner
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitExecutioner
+    shoes: ClothingShoesBootsMagAdv
+    id: ExecutionerPDA
+    pocket1: EnergySword
+    belt: ClothingBeltExecutionerWebbingFilled
+    underwearb: ClothingUnderwearBottomBoxersExecutioner 
+  storage:
+    back:
+    - CombatMedipen
+    - CombatMedipen
+    - CombatMedipen
+    - CombatMedipen
+    - CombatMedipen
+    - CombatMedipen
+    - C4
+    - C4
+    - C4
+    - C4
+    - WeaponPulseRifle
+    - WeaponRevolverMatebaAP
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - PinpointerNuclear
+    - BoxHandcuff
+    - EnergyShield
+    - JawsOfLife
+    - NukeCodePaper
+
+- type: entity
+  parent: WeaponRevolverMateba
+  id: WeaponRevolverMatebaAP
+  name: Матеба
+  description: Знаковое оружие ужасающих карателей. Использует патроны калибра .44 магнум.
+  suffix: Револьвер, Бронебойный, Каратель
+  components:
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeMagnum
+        - SpeedLoaderMagnum
+    proto: CartridgeMagnumAP
+
+- type: entity
+  parent: ClothingBeltSecurityWebbing
+  id: ClothingBeltExecutionerWebbingFilled
+  name: РПС карателя
+  description: РПС члена отряда элитной эвакуации.
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetExecutioner
+  name: мастер гарнитура карателя
+  description: Уникальный образец гарнитуры с доступом во все каналы.
+  suffix: Каратель
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySOC
+      - EncryptionKeyCentCom
+      - EncryptionKeyStationMaster
+      - EncryptionKeyFreelance
+      - EncryptionKeyExecutioner
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/base.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/base.rsi
+  - type: Headset
+    color: "#CF1CFF"

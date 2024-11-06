@@ -1,0 +1,29 @@
+- type: job
+  id: TaipanParamedic
+  name: Парамедик
+  playTimeTracker: TaipanParamedic
+  description: Вы отвечаете за экстренную медицинскую помощь и транспортировку пациентов на станции Тайпан.
+  startingGear: TaipanParamedicGear
+  icon: "JobIconTaipanParamedic"
+  supervisors: job-supervisors-chief-medical-officer
+  canBeAntag: false
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 6000
+  access:
+  - TaipanBasic
+  - TaipanMedical
+  - TaipanMaint
+
+- type: startingGear
+  id: TaipanParamedicGear
+  equipment:
+    eyes: ClothingEyesMedicalHud
+    ears: ClothingHeadsetTaipan
+    jumpsuit: ClothingUniformJumpsuitTaipanParamedic
+    outerClothing: ClothingOuterMedJacket
+    shoes: ClothingShoesColorWhite
+    id: TaipanParamedicPDA
+    back: ClothingBackpackMedical
+    belt: ClothingBeltMedical

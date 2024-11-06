@@ -1,0 +1,171 @@
+- type: job
+  id: RequiemLeader
+  name: Лидер отряда "Реквием"
+  description: Вы лидируете основной универсальный отряд Gorlex, который занимается сопровождением VIP и устранением средних угроз.
+  playTimeTracker: JobRequiemLeader
+  setPreference: false
+  startingGear: RequiemLeaderGear
+  icon: "JobIconMaxTac"
+  supervisors: job-supervisors-gorlex-command
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - TaipanCommand
+  - TaipanSecurity
+
+- type: startingGear
+  id: RequiemLeaderGear
+  equipment:
+    jumpsuit: ClothingUniformRequiemLeader
+    back: ClothingBackpackRequiem
+    mask: ClothingMaskGasRequiem
+    eyes: ClothingEyesHudAdvanced
+    ears: ClothingHeadsetRequiem
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitMaxTac
+    shoes: ClothingShoesCombatMaxTac
+    id: RequiemLeaderPDA
+    suitstorage: AirTankFilled
+    belt: ClothingBeltMilitaryWebbing
+  storage:
+    back:
+    - WeaponPistolPython
+    - WeaponSubMachineGunAtreides
+    - MagazineSubMachineGun
+    - MagazineSubMachineGun
+    - EmergencyMedipen
+    - BoxMRE
+    - Flash
+    - PinpointerNuclear
+    - WeaponLaserSvalinn
+    - PowerCellSmall
+    - PowerCellMedium
+
+- type: job
+  id: RequiemOperative
+  name: Боец отряда "Реквием"
+  description: Вы — часть основного универсального отряда Gorlex, специализируетесь на сопровождении VIP и устранении средних угроз.
+  playTimeTracker: JobRequiemOperative
+  setPreference: false
+  startingGear: RequiemOperativeGear
+  icon: "JobIconMaxTac"
+  supervisors: job-supervisors-requiem-leader
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - TaipanCommand
+  - TaipanSecurity
+
+- type: startingGear
+  id: RequiemOperativeGear
+  equipment:
+    jumpsuit: ClothingUniformRequiemOperative
+    back: ClothingBackpackRequiem
+    mask: ClothingMaskGasRequiem
+    eyes: ClothingEyesHudAdvanced
+    ears: ClothingHeadsetRequiem
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitMaxTac
+    shoes: ClothingShoesCombatMaxTac
+    id: RequiemOperativePDA
+    suitstorage: AirTankFilled
+    belt: ClothingBeltMilitaryWebbing
+  storage:
+    back:
+    - WeaponSubMachineGunAtreides
+    - MagazineSubMachineGun
+    - MagazineSubMachineGun
+    - EmergencyMedipen
+    - BoxMRE
+    - Flash
+    - CrowbarRed
+    - WeaponDisabler
+    - PowerCellSmall
+
+- type: job
+  id: PhoenixLeader
+  name: Лидер отряда "Феникс"
+  description: Вы командуете высокотехнологичным и подготовленным отрядом GorlexSec для критических операций.
+  playTimeTracker: JobPhoenixLeader
+  setPreference: false
+  startingGear: PhoenixLeaderGear
+  icon: "JobIconMaxTac"
+  supervisors: job-supervisors-gorlex-command
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - TaipanCommand
+  - TaipanScience
+  - TaipanSecurity
+
+- type: startingGear
+  id: PhoenixLeaderGear
+  equipment:
+    jumpsuit: ClothingUniformPhoenixLeader
+    back: ClothingBackpackPhoenix
+    mask: ClothingMaskGasPhoenix
+    eyes: ClothingEyesHudAdvanced
+    ears: ClothingHeadsetPhoenix
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitMaxTac
+    shoes: ClothingShoesCombatMaxTac
+    id: PhoenixLeaderPDA
+    suitstorage: AirTankFilled
+    belt: ClothingBeltMilitaryWebbing
+  storage:
+    back:
+    - WeaponPulseRifle
+    - WeaponSubMachineGun
+    - GrenadeEMP
+    - EmergencyMedipen
+    - BoxMRE
+    - Flare
+    - CrowbarRed
+    - WeaponDisabler
+    - TelescopicShield
+    - PinpointerNuclear
+
+- type: job
+  id: PhoenixOperative
+  name: Боец отряда "Феникс"
+  description: Вы — часть высокотехнологичного и подготовленного отряда GorlexSec, участвуете в критических операциях.
+  playTimeTracker: JobPhoenixOperative
+  setPreference: false
+  startingGear: PhoenixOperativeGear
+  icon: "JobIconMaxTac"
+  supervisors: job-supervisors-phoenix-leader
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - TaipanCommand
+  - TaipanScience
+  - TaipanSecurity
+
+- type: startingGear
+  id: PhoenixOperativeGear
+  equipment:
+    jumpsuit: ClothingUniformPhoenixOperative
+    back: ClothingBackpackPhoenix
+    mask: ClothingMaskGasPhoenix
+    eyes: ClothingEyesHudAdvanced
+    ears: ClothingHeadsetPhoenix
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitMaxTac
+    shoes: ClothingShoesCombatMaxTac
+    id: PhoenixOperativePDA
+    suitstorage: AirTankFilled
+    belt: ClothingBeltMilitaryWebbing
+  storage:
+    back:
+    - WeaponPulseRifle
+    - GrenadeEMP
+    - EmergencyMedipen
+    - BoxMRE
+    - Flare
+    - WeaponDisabler
+    - TelescopicShield
+    - PowerCellMedium
