@@ -58,20 +58,6 @@
     - NukeCodePaper
 
 - type: entity
-  parent: WeaponRevolverMateba
-  id: WeaponRevolverMatebaAP
-  name: Матеба
-  description: Знаковое оружие ужасающих карателей. Использует патроны калибра .44 магнум.
-  suffix: Револьвер, Бронебойный, Каратель
-  components:
-  - type: RevolverAmmoProvider
-    whitelist:
-      tags:
-        - CartridgeMagnum
-        - SpeedLoaderMagnum
-    proto: CartridgeMagnumAP
-
-- type: entity
   parent: ClothingBeltSecurityWebbing
   id: ClothingBeltExecutionerWebbingFilled
   name: РПС карателя

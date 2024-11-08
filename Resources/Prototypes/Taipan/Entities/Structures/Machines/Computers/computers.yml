@@ -1,0 +1,238 @@
+- type: entity
+  parent: BaseComputerAiAccess
+  id: ComputerCargoOrdersTaipan
+  name: консоль заказа грузов
+  suffix: Тайпан
+  description: Используется для заказа поставок и утверждения запросов.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: request
+    - map: ["computerLayerKeys"]
+      state: tech_key
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: CargoOrderConsole
+  - type: BankClient
+  - type: ActiveRadio
+    channels:
+    - Supply
+  - type: ActivatableUI
+    key: enum.CargoConsoleUiKey.Orders
+  - type: UserInterface
+    interfaces:
+      enum.CargoConsoleUiKey.Orders:
+        type: CargoOrderConsoleBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Computer
+    board: CargoRequestComputerCircuitboardTaipan
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#b89f25"
+  - type: AccessReader
+    access: [["Cargo"]]
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    range: 200
+    ports:
+      - OrderSender
+  - type: GuideHelp
+    guides:
+    - Cargo
+
+- type: entity
+  parent: BaseComputerAiAccess
+  id: ComputerCargoBountyTaipan
+  name: консоль запросов
+  suffix: Тайпан
+  description: Используется для управления активными наградами.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: bounty
+    - map: ["computerLayerKeys"]
+      state: tech_key
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: CargoBountyConsole
+  - type: ActivatableUI
+    key: enum.CargoConsoleUiKey.Bounty
+  - type: UserInterface
+    interfaces:
+      enum.CargoConsoleUiKey.Bounty:
+        type: CargoBountyConsoleBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Computer
+    board: CargoBountyComputerCircuitboardTaipan
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#b89f25"
+  - type: AccessReader
+    access: [["Quartermaster"]]
+  - type: GuideHelp
+    guides:
+    - CargoBounties
+    - Cargo
+
+- type: entity
+  parent: BaseComputerAiAccess
+  id: ComputerResearchAndDevelopmentTaipan
+  name: исследовательская консоль
+  suffix: Тайпан
+  description: Компьютер, используемый для работы с инструментами исследования и разработки.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: rdcomp
+    - map: ["computerLayerKeys"]
+      state: rd_key
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: ResearchClient
+  - type: ResearchConsole
+  - type: ActiveRadio
+    channels:
+    - Science
+  - type: TechnologyDatabase
+  - type: ActivatableUI
+    key: enum.ResearchConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ResearchConsoleUiKey.Key:
+        type: ResearchConsoleBoundUserInterface
+      enum.ResearchClientUiKey.Key:
+        type: ResearchClientBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: ApcPowerReceiver
+    powerLoad: 1000
+  - type: Computer
+    board: ResearchComputerCircuitboardTaipan
+  - type: AccessReader
+    access: [["Research"]]
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#b53ca1"
+  - type: GuideHelp
+    guides:
+    - Science
+
+- type: entity
+  parent: BaseComputerAiAccess
+  id: ComputerCrewMonitoringTaipan
+  name: консоль мониторинга экипажа
+  suffix: Тайпан
+  description: Используется для мониторинга активных датчиков здоровья большинства униформ экипажа.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: crew
+    - map: ["computerLayerKeys"]
+      state: med_key
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#006400"
+  - type: Computer
+    board: CrewMonitoringComputerCircuitboardTaipan
+  - type: ActivatableUI
+    key: enum.CrewMonitoringUIKey.Key
+  - type: UserInterface
+    interfaces:
+        enum.CrewMonitoringUIKey.Key:
+          type: CrewMonitoringBoundUserInterface
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
+  - type: CrewMonitoringConsole
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: CrewMonitor
+  - type: WirelessNetworkConnection
+    range: 1200
+
+- type: entity
+  parent: BaseComputerAiAccess
+  id: ComputerAnalysisConsoleTaipan
+  name: аналитическая консоль
+  suffix: Тайпан
+  description: Компьютер, используемый для взаимодействия с анализатором артефактов.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: artifact
+    - map: ["computerLayerKeys"]
+      state: tech_key
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: ResearchClient
+  - type: AnalysisConsole
+    reportEntityId: PaperArtifactAnalyzer
+  - type: DeviceList
+  - type: DeviceNetwork
+    deviceNetId: Wired
+  - type: DeviceLinkSource
+    range: 5
+    ports:
+      - ArtifactAnalyzerSender
+  - type: ActivatableUI
+    key: enum.ArtifactAnalzyerUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ArtifactAnalzyerUiKey.Key:
+        type: AnalysisConsoleBoundUserInterface
+      enum.ResearchClientUiKey.Key:
+        type: ResearchClientBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: ApcPowerReceiver
+    powerLoad: 1000
+  - type: Computer
+    board: AnalysisComputerCircuitboardTaipan
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#b53ca1"
+  - type: GuideHelp
+    guides:
+    - Xenoarchaeology

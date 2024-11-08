@@ -1,0 +1,239 @@
+# # Taipan Department Spawn Points
+
+# - type: entity
+  # id: SpawnPointTaipanAtmosphericsEngineer
+  # parent: SpawnPointJobBase
+  # name: taipan atmospherics engineer
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanAtmosphericsEngineer
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: atmospherics
+
+# - type: entity
+  # id: SpawnPointTaipanBotanist
+  # parent: SpawnPointJobBase
+  # name: taipan botanist
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanBotanist
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: botanist
+
+# - type: entity
+  # id: SpawnPointTaipanChef
+  # parent: SpawnPointJobBase
+  # name: taipan chef
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanChef
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: chef
+
+# - type: entity
+  # id: SpawnPointTaipanTechnicalOperationsSupervisor
+  # parent: SpawnPointJobBase
+  # name: taipan technical operations supervisor
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanTechnicalOperationsSupervisor
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: qm
+
+# - type: entity
+  # id: SpawnPointTaipanCommunicationsOfficer
+  # parent: SpawnPointJobBase
+  # name: taipan communications officer
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanCommunicationsOfficer
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: hos
+
+# - type: entity
+  # id: SpawnPointTaipanMedicalDoctor
+  # parent: SpawnPointJobBase
+  # name: taipan medical doctor
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanMedicalDoctor
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: doctor
+
+# - type: entity
+  # id: SpawnPointTaipanParamedic
+  # parent: SpawnPointJobBase
+  # name: taipan paramedic
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanParamedic
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: paramedic
+
+# - type: entity
+  # id: SpawnPointTaipanRecruit
+  # parent: SpawnPointJobBase
+  # name: taipan recruit
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanRecruit
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: security_officer
+
+# - type: entity
+  # id: SpawnPointTaipanResearchDirector
+  # parent: SpawnPointJobBase
+  # name: taipan research director
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanResearchDirector
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: rd
+
+# - type: entity
+  # id: SpawnPointTaipanScientist
+  # parent: SpawnPointJobBase
+  # name: taipan scientist
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanScientist
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: scientist
+
+# - type: entity
+  # id: SpawnPointTaipanStationEngineer
+  # parent: SpawnPointJobBase
+  # name: taipan station engineer
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanStationEngineer
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: engineer
+
+# - type: entity
+  # id: SpawnPointTaipanCargotech
+  # parent: SpawnPointJobBase
+  # name: taipan cargotech
+  # components:
+  # - type: SpawnPoint
+    # job_id: TaipanCargotech
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: cargo_tech
+
+# # Special Operations Spawn Points
+
+# # Chlorine Response Team (РХБЗЗ)
+
+# - type: entity
+  # id: SpawnPointAdaxEVOLeader
+  # parent: SpawnPointJobBase
+  # name: adax evo leader
+  # components:
+  # - type: SpawnPoint
+    # job_id: AdaxEVOLeader
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: ertleader  # Изменить на подходящую иконку, если потребуется
+
+# - type: entity
+  # id: SpawnPointAdaxEVOAgent
+  # parent: SpawnPointJobBase
+  # name: adax evo agent
+  # components:
+  # - type: SpawnPoint
+    # job_id: AdaxEVOAgent
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: ertsecurity  # Изменить на подходящую иконку, если потребуется
+
+# # Requiem Team (ОБР "Реквием")
+
+# - type: entity
+  # id: SpawnPointRequiemLeader
+  # parent: SpawnPointJobBase
+  # name: requiem leader
+  # components:
+  # - type: SpawnPoint
+    # job_id: RequiemLeader
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: ertleader  # Изменить на подходящую иконку, если потребуется
+
+# - type: entity
+  # id: SpawnPointRequiemOperative
+  # parent: SpawnPointJobBase
+  # name: requiem operative
+  # components:
+  # - type: SpawnPoint
+    # job_id: RequiemOperative
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: ertsecurity  # Изменить на подходящую иконку, если потребуется
+
+# # Phoenix Team (ОБР "Феникс")
+
+# - type: entity
+  # id: SpawnPointPhoenixLeader
+  # parent: SpawnPointJobBase
+  # name: phoenix leader
+  # components:
+  # - type: SpawnPoint
+    # job_id: PhoenixLeader
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: ertleader  # Изменить на подходящую иконку, если потребуется
+
+# - type: entity
+  # id: SpawnPointPhoenixOperative
+  # parent: SpawnPointJobBase
+  # name: phoenix operative
+  # components:
+  # - type: SpawnPoint
+    # job_id: PhoenixOperative
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: ertsecurity  # Изменить на подходящую иконку, если потребуется
+
+# # Death Squad (Эскадрон смерти)
+
+# - type: entity
+  # id: SpawnPointExecutioner
+  # parent: SpawnPointJobBase
+  # name: executioner
+  # components:
+  # - type: SpawnPoint
+    # job_id: Executioner
+  # - type: Sprite
+    # layers:
+      # - state: green
+      # - state: ertsecurity  # Изменить на подходящую иконку, если потребуется

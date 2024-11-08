@@ -1,0 +1,581 @@
+- type: entity
+  id: AutolatheTaipan
+  parent: BaseLatheLube
+  name: автолат
+  suffix: Тайпан
+  description: Производит базовые изделия из металла и стекла. Имеет возможность обрабатывать чертежи для печати по новым рецептам.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/autolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: AutolatheMachineCircuitboardTaipan
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticRecipes:
+      - Wirecutter
+      - Igniter
+      - Signaller
+      - Screwdriver
+      - Welder
+      - Wrench
+      - CrowbarGreen
+      - Multitool
+      - NetworkConfigurator
+      - SprayPainter
+      - FlashlightLantern
+      - CableStack
+      - CableMVStack
+      - CableHVStack
+      - HandheldGPSBasic
+      - TRayScanner
+      - AirTank
+      - GasAnalyzer
+      - UtilityBelt
+      - Pickaxe
+      - ModularReceiver
+      - AppraisalTool
+      - SheetRGlass
+      - Beaker
+      - Syringe
+      - HandLabeler
+      - LightTube
+      - LedLightTube
+      - SodiumLightTube
+      - ExteriorLightTube
+      - LightBulb
+      - LedLightBulb
+      - Bucket
+      - DrinkMug
+      - DrinkMugMetal
+      - DrinkGlass
+      - DrinkShotGlass
+      - DrinkGlassCoupeShaped
+      - CustomDrinkJug
+      - FoodPlate
+      - FoodPlateSmall
+      - FoodPlatePlastic
+      - FoodPlateSmallPlastic
+      - FoodBowlBig
+      - FoodPlateTin
+      - FoodKebabSkewer
+      - SprayBottle
+      - MopItem
+      - Holoprojector
+      - Mousetrap
+      - LightReplacer
+      - TrashBag
+      - PowerCellSmall
+      - PowerCellMedium
+      - RollerBedSpawnFolded
+      - CheapRollerBedSpawnFolded
+      - EmergencyRollerBedSpawnFolded
+      - MicroManipulatorStockPart
+      - MatterBinStockPart
+      - CapacitorStockPart
+      - ConveyorBeltAssembly
+      - IntercomElectronics
+      - FirelockElectronics
+      - DoorElectronics
+      - AirAlarmElectronics
+      - StationMapElectronics
+      - FireAlarmElectronics
+      - MailingUnitElectronics
+      - SignalTimerElectronics
+      - APCElectronics
+      - SMESMachineCircuitboard
+      - SubstationMachineCircuitboard
+      - WallmountSubstationElectronics
+      - CellRechargerCircuitboard
+      - BorgChargerCircuitboard
+      - WeaponCapacitorRechargerCircuitboard
+      - HandheldStationMap
+      - ClothingHeadHatWelding
+      - WetFloorSign
+      - ClothingHeadHatCone
+      - FreezerElectronics
+  - type: EmagLatheRecipes
+    emagStaticRecipes:
+      - BoxLethalshot
+      - BoxShotgunSlug
+      - CombatKnife
+      - MagazineBoxLightRifle
+      - MagazineBoxMagnum
+      - MagazineBoxPistol
+      - MagazineBoxRifle
+      - MagazineLightRifle
+      - MagazineLightRifleEmpty
+      - MagazinePistol
+      - MagazinePistolEmpty
+      - MagazinePistolSubMachineGun
+      - MagazinePistolSubMachineGunEmpty
+      - MagazinePistolSubMachineGunTopMounted
+      - MagazinePistolSubMachineGunTopMountedEmpty
+      - MagazineRifle
+      - MagazineRifleEmpty
+      - MagazineShotgun
+      - MagazineShotgunEmpty
+      - MagazineShotgunSlug
+      - RiotShield
+      - SpeedLoaderMagnum
+      - SpeedLoaderMagnumEmpty
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintAutolathe
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
+
+- type: entity
+  id: AutolatheHyperConvectionTaipan
+  parent: [AutolatheTaipan, BaseHyperlathe]
+  name: гиперконвекционный автолат
+  suffix: Тайпан
+  description: Экспериментальный автолат, использующий технологию экстремального нагрева для замедленного, но гораздо более экономичного создания предметов.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/autolathe_hypercon.rsi
+  - type: Machine
+    board: AutolatheHyperConvectionMachineCircuitboardTaipan
+
+- type: entity
+  id: ProtolatheTaipan
+  parent: BaseLatheLube
+  name: протолат
+  suffix: Тайпан
+  description: Преобразует сырьё в продвинутые предметы.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: ProtolatheMachineCircuitboardTaipan
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticRecipes:
+    - LargeBeaker
+    - Dropper
+    - ClothingEyesGlassesChemical
+    dynamicRecipes:
+      - PowerDrill
+      - MiningDrill
+      - MiningDrillDiamond
+      - AnomalyScanner
+      - AnomalyLocator
+      - AnomalyLocatorWide
+      - Scalpel
+      - Retractor
+      - Cautery
+      - Drill
+      - WeaponParticleDecelerator
+      - HoloprojectorField
+      - Saw
+      - Hemostat
+      - CryostasisBeaker
+      - SyringeCryostasis
+      - Syringe
+      - Implanter
+      - PillCanister
+      - ChemistryEmptyBottle01
+      - AdvMopItem
+      - WeaponSprayNozzle
+      - ClothingBackpackWaterTank
+      - MegaSprayBottle
+      - TimerTrigger
+      - ChemicalPayload
+      - FlashPayload
+      - Signaller
+      - SignallerAdvanced
+      - SignalTrigger
+      - VoiceTrigger
+      - Igniter
+      - HandHeldMassScanner
+      - PowerCellMicroreactor
+      - PowerCellHigh
+      - WeaponPistolCHIMP
+      - ClothingMaskWeldingGas
+      - MineralScannerEmpty
+      - AdvancedMineralScannerEmpty
+      - WeaponGauntletGorilla
+      - SynthesizerInstrument
+      - ClothingShoesBootsMagSci
+      - ClothingShoesBootsMoon
+      - ClothingShoesBootsSpeed
+      - NodeScanner
+      - HolofanProjector
+      - BluespaceBeaker
+      - SyringeBluespace
+      - WeaponForceGun
+      - WeaponLaserSvalinn
+      - WeaponProtoKineticAccelerator
+      - WeaponTetherGun
+      - ClothingBackpackHolding
+      - ClothingBackpackSatchelHolding
+      - ClothingBackpackDuffelHolding
+      - WelderExperimental
+      - JawsOfLife
+      - FauxTileAstroGrass
+      - FauxTileMowedAstroGrass
+      - FauxTileJungleAstroGrass
+      - FauxTileAstroIce
+      - FauxTileAstroSnow
+      - OreBagOfHolding
+      - DeviceQuantumSpinInverter
+  - type: EmagLatheRecipes
+    emagDynamicRecipes:
+      - BoxBeanbag
+      - BoxShotgunIncendiary
+      - BoxShotgunUranium
+      - BoxShellTranquilizer
+      - ExplosivePayload
+      - GrenadeBlast
+      - GrenadeEMP
+      - GrenadeFlash
+      - HoloprojectorSecurity
+      - MagazineBoxLightRifleIncendiary
+      - MagazineBoxLightRifleUranium
+      - MagazineBoxMagnumIncendiary
+      - MagazineBoxMagnumUranium
+      - MagazineBoxPistolIncendiary
+      - MagazineBoxPistolUranium
+      - MagazineBoxRifleIncendiary
+      - MagazineBoxRifleUranium
+      - MagazineGrenadeEmpty
+      - MagazineLightRifleIncendiary
+      - MagazineLightRifleUranium
+      - MagazinePistolIncendiary
+      - MagazinePistolUranium
+      - MagazineRifleIncendiary
+      - MagazineRifleUranium
+      - MagazineShotgunBeanbag
+      - MagazineShotgunIncendiary
+      - MagazineShotgunIncendiary
+      - PortableRecharger
+      - PowerCageHigh
+      - PowerCageMedium
+      - PowerCageSmall
+      - SpeedLoaderMagnumIncendiary
+      - SpeedLoaderMagnumUranium
+      - TelescopicShield
+      - Truncheon
+      - WeaponAdvancedLaser
+      - WeaponLaserCannon
+      - WeaponLaserCarbine
+      - WeaponXrayCannon
+
+- type: entity
+  id: ProtolatheHyperConvectionTaipan
+  parent: [ProtolatheTaipan, BaseHyperlathe]
+  name: гиперконвекционный протолат
+  suffix: Тайпан
+  description: Экспериментальный протолат, использующий технологию экстремального нагрева для замедленного, но гораздо более экономичного создания предметов.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/protolathe_hypercon.rsi
+  - type: Machine
+    board: ProtolatheHyperConvectionMachineCircuitboardTaipan
+
+- type: entity
+  id: CircuitImprinterTaipan
+  parent: BaseLatheLube
+  name: принтер схем
+  suffix: Тайпан
+  description: Печатает платы для машин.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/circuit_imprinter.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: CircuitImprinterMachineCircuitboardTaipan
+  - type: Lathe
+    producingSound: /Audio/Machines/circuitprinter.ogg
+    idleState: icon
+    runningState: building
+    staticRecipes:
+    - ProtolatheMachineCircuitboardTaipan
+    - AutolatheMachineCircuitboardTaipan
+    - CircuitImprinterMachineCircuitboardTaipan
+    - BiogeneratorMachineCircuitboard
+    - OreProcessorMachineCircuitboard
+    - ElectrolysisUnitMachineCircuitboard
+    - CentrifugeMachineCircuitboard
+    - ChemDispenserMachineCircuitboard
+    - ChemMasterMachineCircuitboard
+    - CondenserMachineCircuitBoard
+    - HotplateMachineCircuitboard
+    - PrinterDocMachineCircuitboard # Corvax-Printer
+    - UniformPrinterMachineCircuitboard
+    - FloorGreenCircuit
+    - FloorBlueCircuit
+    - FloorRedCircuit
+    - MicrowaveMachineCircuitboardTaipan
+    - ReagentGrinderMachineCircuitboard
+    - ElectricGrillMachineCircuitboard
+    - BoozeDispenserMachineCircuitboard
+    - SodaDispenserMachineCircuitboard
+    - SpaceHeaterMachineCircuitBoard
+    - CutterMachineCircuitboard
+    - StationAnchorCircuitboard
+    - SalvageMagnetMachineCircuitboard
+    dynamicRecipes:
+      - ThermomachineFreezerMachineCircuitBoard
+      - HellfireFreezerMachineCircuitBoard
+      - PortableScrubberMachineCircuitBoard
+      - CloningPodMachineCircuitboard
+      - MedicalScannerMachineCircuitboard
+      - CryoPodMachineCircuitboard
+      - VaccinatorMachineCircuitboard
+      - DiagnoserMachineCircuitboard
+      - BiomassReclaimerMachineCircuitboard
+      - BiofabricatorMachineCircuitboard
+      - SurveillanceCameraRouterCircuitboard
+      - SurveillanceCameraMonitorCircuitboard
+      - SurveillanceWirelessCameraMonitorCircuitboard
+      - SurveillanceCameraWirelessRouterCircuitboard
+      - ComputerTelevisionCircuitboard
+      - SurveillanceWirelessCameraMovableCircuitboard
+      - SurveillanceWirelessCameraAnchoredCircuitboard
+      - HydroponicsTrayMachineCircuitboard
+      - SolarControlComputerCircuitboard
+      - SolarTrackerElectronics
+      - TurboItemRechargerCircuitboard
+      - PowerComputerCircuitboard
+      - AutolatheHyperConvectionMachineCircuitboardTaipan
+      - ProtolatheHyperConvectionMachineCircuitboardTaipan
+      - CircuitImprinterHyperConvectionMachineCircuitboardTaipan
+      - FatExtractorMachineCircuitboard
+      - FlatpackerMachineCircuitboard
+      - SheetifierMachineCircuitboard
+      - ShuttleConsoleCircuitboard
+      - RadarConsoleCircuitboard
+      - TechDiskComputerCircuitboardTaipan
+      - DawInstrumentMachineCircuitboard
+      - CloningConsoleComputerCircuitboard
+      - StasisBedMachineCircuitboard
+      - OreProcessorIndustrialMachineCircuitboard
+      - CargoTelepadMachineCircuitboardTaipan
+      - RipleyCentralElectronics
+      - RipleyPeripheralsElectronics
+      - HonkerCentralElectronics
+      - HonkerPeripheralsElectronics
+      - HonkerTargetingElectronics
+      - HamtrCentralElectronics
+      - HamtrPeripheralsElectronics
+      - PortableGeneratorPacmanMachineCircuitboard
+      - PortableGeneratorSuperPacmanMachineCircuitboard
+      - PortableGeneratorJrPacmanMachineCircuitboard
+      - WallmountSubstationElectronics
+      - PowerCageRechargerCircuitboard
+      - EmitterCircuitboard
+      - ThrusterMachineCircuitboard
+      - GyroscopeMachineCircuitboard
+      - MiniGravityGeneratorCircuitboard
+      - ShuttleGunKineticCircuitboard
+      - GasRecyclerMachineCircuitboard
+      - SeedExtractorMachineCircuitboard
+      - AnalysisComputerCircuitboardTaipan
+      - ExosuitFabricatorMachineCircuitboardTaipan
+      - AnomalyVesselCircuitboard
+      - AnomalyVesselExperimentalCircuitboard
+      - AnomalySynchronizerCircuitboard
+      - APECircuitboard
+      - ArtifactAnalyzerMachineCircuitboard
+      - ArtifactCrusherMachineCircuitboard
+      - TelecomServerCircuitboard
+      - MassMediaCircuitboard
+      - ReagentGrinderIndustrialMachineCircuitboard
+      - JukeboxCircuitBoard
+      - SalvageExpeditionsComputerCircuitboardTaipan # Corvax-Cringe
+  - type: EmagLatheRecipes
+    emagDynamicRecipes:
+      - ShuttleGunDusterCircuitboard
+      - ShuttleGunFriendshipCircuitboard
+      - ShuttleGunPerforatorCircuitboard
+      - ShuttleGunSvalinnMachineGunCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+  - type: RequireProjectileTarget
+
+- type: entity
+  id: CircuitImprinterHyperConvectionTaipan
+  parent: [CircuitImprinterTaipan, BaseHyperlathe]
+  name: гиперконвекционный принтер схем
+  suffix: Тайпан
+  description: Экспериментальный принтер схем, использующий технологию экстремального нагрева для замедленного, но гораздо более экономичного создания предметов.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/circuit_imprinter_hypercon.rsi
+  - type: Machine
+    board: CircuitImprinterHyperConvectionMachineCircuitboardTaipan
+
+- type: entity
+  id: ExosuitFabricatorTaipan
+  parent: BaseLatheLube
+  name: фабрикатор экзокостюмов
+  suffix: Тайпан
+  description: Печатает запчасти для создания робототехники и других механизмов.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/exosuit_fabricator.rsi
+    layers:
+    - state: fab-idle
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: fab-load
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: fab-o
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: ExosuitFabricatorMachineCircuitboardTaipan
+  - type: Lathe
+    idleState: fab-idle
+    runningState: fab-active
+    staticRecipes:
+    - MMI
+    - PositronicBrain
+    - SciFlash
+    - BorgModuleCable
+    - BorgModuleFireExtinguisher
+    - BorgModuleRadiationDetection
+    - BorgModuleTool
+    - BorgModuleAppraisal
+    - BorgModuleConstruction
+    - BorgModuleService
+    - BorgModuleTreatment
+    - BorgModuleCleaning
+    - CyborgEndoskeleton
+    - LeftArmBorg
+    - RightArmBorg
+    - LeftLegBorg
+    - RightLegBorg
+    - LightHeadBorg
+    - TorsoBorg
+    - LeftArmBorgEngineer
+    - RightArmBorgEngineer
+    - LeftLegBorgEngineer
+    - RightLegBorgEngineer
+    - HeadBorgEngineer
+    - TorsoBorgEngineer
+    - LeftLegBorgJanitor
+    - RightLegBorgJanitor
+    - HeadBorgJanitor
+    - TorsoBorgJanitor
+    - LeftArmBorgMedical
+    - RightArmBorgMedical
+    - LeftLegBorgMedical
+    - RightLegBorgMedical
+    - HeadBorgMedical
+    - TorsoBorgMedical
+    - LeftArmBorgMining
+    - RightArmBorgMining
+    - LeftLegBorgMining
+    - RightLegBorgMining
+    - HeadBorgMining
+    - TorsoBorgMining
+    - LeftArmBorgService
+    - RightArmBorgService
+    - LeftLegBorgService
+    - RightLegBorgService
+    - HeadBorgService
+    - TorsoBorgService
+    dynamicRecipes:
+    - ProximitySensor
+    - BorgModuleLightReplacer
+    - BorgModuleAdvancedCleaning
+    - BorgModuleMining
+    - BorgModuleGrapplingGun
+    - BorgModuleAdvancedTool
+    - BorgModuleGPS
+    - BorgModuleRCD
+    - BorgModuleArtifact
+    - BorgModuleAnomaly
+    - BorgModuleGardening
+    - BorgModuleHarvesting
+    - BorgModuleMusique
+    - BorgModuleClowning
+    - BorgModuleDiagnosis
+    - BorgModuleDefibrillator
+    - BorgModuleAdvancedTreatment
+    - RipleyHarness
+    - RipleyLArm
+    - RipleyRArm
+    - RipleyLLeg
+    - RipleyRLeg
+    - MechEquipmentGrabber
+    - HonkerHarness
+    - HonkerLArm
+    - HonkerRArm
+    - HonkerLLeg
+    - HonkerRLeg
+    - MechEquipmentHorn
+    - MechEquipmentGrabberSmall
+    - HamtrHarness
+    - HamtrLArm
+    - HamtrRArm
+    - HamtrLLeg
+    - HamtrRLeg
+    - VimHarness
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Sheet
+      - RawMaterial
+      - Ingot
+  - type: GuideHelp
+    guides:
+    - Robotics
