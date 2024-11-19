@@ -1,0 +1,487 @@
+# Taipan Atmospherics Engineer Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitTaipanAtmos
+  name: Скафандр атмосферного инженера
+  description: Скафандр для атмосферных инженеров, обеспечивающий защиту в опасных условиях.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-atmos.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-atmos.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: FireProtection
+    reduction: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.8
+        Radiation: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.7
+    sprintModifier: 0.7
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitTaipanAtmos
+
+# Taipan Technical Operations Supervisor Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitTaipanTechOps
+  name: Скафандр руководителя тех-обеспечения
+  description: Высокопрочный скафандр для руководителя технического обеспечения во время космических выходов.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-techops.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-techops.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.7
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Radiation: 0.3
+        Caustic: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitTaipanTechOps
+
+# Taipan Communications Officer Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitTaipanComms
+  name: Скафандр офицера телекоммуникаций
+  description: Продвинутый скафандр с превосходной защитой для офицера телекоммуникаций.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-comms.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-comms.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.5
+        Heat: 0.2
+        Radiation: 0.05
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitTaipanComms
+
+# Taipan Paramedic Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitTaipanParamedic
+  name: Скафандр парамедика
+  description: Скафандр для медиков, предоставляющий защиту и подвижность.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-paramedic.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-paramedic.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.8
+        Blunt: 0.8
+        Slash: 0.9
+        Piercing: 0.9
+        Radiation: 0.75
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitTaipanParamedic
+
+# Taipan Recruit Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitTaipanRecruit
+  name: Скафандр рекрута
+  description: Скафандр для рекрутов, предоставляющий сбалансированную защиту.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-recruit.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-recruit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.6
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Caustic: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.75
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitTaipanRecruit
+
+# Taipan Research Director Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitTaipanRD
+  name: Скафандр директора исследований
+  description: Продвинутый скафандр для исследования, предназначенный для директора по исследованиям.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-rd.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-rd.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.8
+        Piercing: 0.9
+        Heat: 0.3
+        Radiation: 0.1
+        Caustic: 0.2
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.75
+  - type: HeldSpeedModifier
+  - type: Item
+    size: Huge
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitTaipanRD
+
+# Taipan Station Engineer Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitTaipanEngineer
+  name: Скафандр ремонтника
+  description: Стандартный скафандр для ремонтников, предоставляющий основную защиту и функциональность.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-engineer.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-engineer.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.04
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Shock: 0.8
+        Caustic: 0.5
+        Radiation: 0.2
+  - type: ClothingSpeedModifier
+    walkModifier: 0.7
+    sprintModifier: 0.7
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitTaipanEngineer
+
+# Taipan Cargotech Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitTaipanCargotech
+  name: Скафандр карготехника
+  description: Специализированный скафандр для карготехника, обеспечивающий усиленную защиту для работы в опасной среде.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-cargotech.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/taipan-cargotech.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.5
+        Radiation: 0.3
+        Caustic: 0.7
+        Heat: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.75
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitTaipanCargotech
+
+# Requiem Leader Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitRequiemLeader
+  name: Скафандр лидера Реквием
+  description: Защитный костюм, носимый лидером команды быстрого реагирования Реквием.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/requiemleader.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/requiemleader.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.3
+        Heat: 0.5
+        Radiation: 0.25
+        Caustic: 0.4
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitRequiemLeader
+  # - type: HardsuitIdentification
+  - type: Speech
+  # - type: TTS
+    # voice: Glados
+
+# Requiem Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitRequiem
+  name: Скафандр Реквием
+  description: Защитный костюм для оперативников команды быстрого реагирования Реквием.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/requiem.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/requiem.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.4
+        Heat: 0.5
+        Radiation: 0.5
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitRequiem
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+  # - type: HardsuitIdentification
+  - type: Speech
+  # - type: TTS
+    # voice: Glados
+
+# Phoenix Leader Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitPhoenixLeader
+  name: Скафандр лидера Феникс
+  description: Защитный костюм, носимый лидером самого мощного отряда быстрого реагирования Феникс.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/phoenixleader.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/phoenixleader.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.2
+        Heat: 0.4
+        Radiation: 0.2
+        Caustic: 0.3
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitPhoenixLeader
+  # - type: HardsuitIdentification
+  - type: Speech
+  # - type: TTS
+    # voice: Glados
+
+# Phoenix Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitPhoenix
+  name: Скафандр Феникс
+  description: Защитный костюм для оперативников самого мощного отряда быстрого реагирования Феникс.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/phoenix.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/phoenix.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.3
+        Heat: 0.4
+        Radiation: 0.4
+        Caustic: 0.4
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitPhoenix
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+  # - type: HardsuitIdentification
+  - type: Speech
+  # - type: TTS
+    # voice: Glados
+
+# Adax EVO Leader Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitAdaxEVOLeader
+  name: Скафандр лидера Adax EVO
+  description: Специализированный лидерский скафандр для тактических операций.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/adaxevoleader.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/adaxevoleader.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.05
+        Cold: 0.1
+        Shock: 0.1
+        Radiation: 0.1
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetAdaxEVOLeader
+  # - type: HardsuitIdentification
+
+# Adax EVO Agent Hardsuit
+- type: entity
+  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
+  id: ClothingOuterHardsuitAdaxEVOAgent
+  name: Скафандр агента Adax EVO
+  description: Компактный и продвинутый скафандр, идеальный для тактических операций.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/adaxevoagent.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/adaxevoagent.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.1
+        Cold: 0.1
+        Shock: 0.1
+        Radiation: 0.1
+        Caustic: 0.1
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetAdaxEVOAgent
+  # - type: HardsuitIdentification

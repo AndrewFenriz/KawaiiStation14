@@ -1,0 +1,62 @@
+# - type: entity
+  # abstract: true
+  # id: BaseBorgTransponderTaipan
+  # components:
+  # - type: BorgTransponder
+  # - type: DeviceNetwork
+    # deviceNetId: Wireless
+    # receiveFrequencyId: CyborgControl
+    # transmitFrequencyId: RoboticsConsole
+    # savableAddress: false
+  # - type: OnUseTimerTrigger
+    # delay: 10
+    # examinable: false
+    # beepSound:
+      # path: /Audio/Effects/Cargo/buzz_two.ogg
+      # params:
+        # volume: -4
+  # # prevent any funnies if someone makes a cyborg item...
+  # - type: AutomatedTimer
+  # - type: ExplodeOnTrigger
+  # # explosion does most of its damage in the center and less at the edges
+  # - type: Explosive
+    # explosionType: Minibomb
+    # deleteAfterExplosion: false # let damage threshold gib the borg
+    # totalIntensity: 30
+    # intensitySlope: 20
+    # maxIntensity: 20
+    # canCreateVacuum: false # its for killing the borg not the station
+
+# - type: entity
+  # id: BaseBorgChassisTaipan
+  # parent: [BaseBorgChassis, BaseBorgTransponderTaipan]
+  # abstract: true
+  # components:
+  # - type: NpcFactionMember
+    # factions:
+    # - Syndicate
+  # - type: Access
+    # tags:
+    # - AccessReader
+    # - NuclearOperative
+    # - SyndicateAgent
+  # - type: AccessReader
+    # access: [["TaipanCommand"], ["TaipanScience"]]
+  # - type: SiliconLawProvider
+    # laws: SyndicateStatic
+  # - type: IntrinsicRadioTransmitter
+    # channels:
+    # - Binary
+    # - RadioTaipan
+  # - type: ActiveRadio
+    # channels:
+    # - RadioTaipan
+  # - type: ShowJobIcons
+  # - type: MovementAlwaysTouching
+  # - type: Speech
+    # speechSounds: SyndieBorg
+  # - type: Vocal
+    # sounds:
+      # Unsexed: UnisexSiliconSyndicate
+  # - type: PointLight
+    # color: "#dd200b"

@@ -1,0 +1,5 @@
+- type: hudTheme
+  id: SS14SyndicateTheme
+  name: Syndicate
+  path: Syndicate
+  order: 8

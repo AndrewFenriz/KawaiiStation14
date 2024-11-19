@@ -1,0 +1,293 @@
+# Helmet for Taipan Atmospherics Engineer Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitTaipanAtmos
+  name: шлем скафандра атмосферного инженера
+  description: Специальный шлем для работы в условиях низкого давления и высокой температуры.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-atmos.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-atmos.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#adffe6"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: FireProtection
+    reduction: 0.2
+
+# Helmet for Taipan Technical Operations Supervisor Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitTaipanTechOps
+  name: шлем скафандра руководителя тех-обеспечения
+  description: Высокопрочный шлем для выхода в открытый космос.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-techops.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-techops.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.7
+    lowPressureMultiplier: 1000
+
+# Helmet for Taipan Communications Officer Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitTaipanComms
+  name: шлем скафандра офицера телекоммуникаций
+  description: Продвинутый шлем с превосходной защитой для офицера телекоммуникаций.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-comms.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-comms.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+
+# Helmet for Taipan Paramedic Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitTaipanParamedic
+  name: шлем скафандра парамедика
+  description: Шлем для медиков, предоставляющий защиту и подвижность.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-paramedic.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-paramedic.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+
+# Helmet for Taipan Recruit Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitTaipanRecruit
+  name: шлем скафандра рекрута
+  description: Шлем для рекрутов, предоставляющий сбалансированную защиту.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-recruit.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-recruit.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+
+# Helmet for Taipan Research Director Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitTaipanRD
+  name: шлем скафандра директора исследований
+  description: Вымышленный шлем для исследовательских целей.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-rd.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-rd.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+
+# Helmet for Taipan Station Engineer Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitTaipanEngineer
+  name: шлем скафандра ремонтника
+  description: Стандартный шлем для ремонтников, обеспечивающий базовую защиту.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-engineer.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-engineer.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.04
+    lowPressureMultiplier: 1000
+
+# Helmet for Taipan Cargotech Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitTaipanCargotech
+  name: шлем скафандра карготехника
+  description: Специализированный шлем для работы в опасной среде.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-cargotech.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/taipan-cargotech.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+
+# Helmet for Requiem Leader Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitRequiemLeader
+  name: шлем скафандра лидера Реквием
+  description: Защитный шлем лидера быстрого реагирования Реквием.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/requiemleader.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/requiemleader.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+
+# Helmet for Requiem Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitRequiem
+  name: шлем скафандра Реквием
+  description: Защитный шлем для оперативников Реквием.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/requiem.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/requiem.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+
+# Helmet for Phoenix Leader Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitPhoenixLeader
+  name: шлем скафандра лидера Феникс
+  description: Защитный шлем лидера отряда быстрого реагирования Феникс.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/phoenixleader.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/phoenixleader.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+
+# Helmet for Phoenix Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitPhoenix
+  name: шлем скафандра Феникс
+  description: Защитный шлем для оперативников отряда Феникс.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/phoenix.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/phoenix.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+
+# Helmet for Adax EVO Leader Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetAdaxEVOLeader
+  name: шлем скафандра лидера Adax EVO
+  description: Специализированный тактический шлем для лидеров.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/adaxevoleader.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/adaxevoleader.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+
+# Helmet for Adax EVO Agent Hardsuit
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetAdaxEVOAgent
+  name: шлем скафандра агента Adax EVO
+  description: Компактный шлем для тактических операций.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/Head/Hardsuits/adaxevoagent.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Head/Hardsuits/adaxevoagent.rsi
+  - type: HandheldLight
+    addPrefix: false
+  - type: PointLight
+    color: "#ffffff"
+    radius: 6
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001

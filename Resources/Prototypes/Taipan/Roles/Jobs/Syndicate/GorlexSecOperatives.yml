@@ -23,7 +23,7 @@
     eyes: ClothingEyesHudAdvanced
     ears: ClothingHeadsetRequiem
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitMaxTac
+    outerClothing: ClothingOuterHardsuitRequiemLeader
     shoes: ClothingShoesCombatMaxTac
     id: RequiemLeaderPDA
     suitstorage: AirTankFilled
@@ -67,7 +67,7 @@
     eyes: ClothingEyesHudAdvanced
     ears: ClothingHeadsetRequiem
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitMaxTac
+    outerClothing: ClothingOuterHardsuitRequiem
     shoes: ClothingShoesCombatMaxTac
     id: RequiemOperativePDA
     suitstorage: AirTankFilled
@@ -110,7 +110,7 @@
     eyes: ClothingEyesHudAdvanced
     ears: ClothingHeadsetPhoenix
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitMaxTac
+    outerClothing: ClothingOuterHardsuitPhoenixLeader
     shoes: ClothingShoesCombatMaxTac
     id: PhoenixLeaderPDA
     suitstorage: AirTankFilled
@@ -154,7 +154,7 @@
     eyes: ClothingEyesHudAdvanced
     ears: ClothingHeadsetPhoenix
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitMaxTac
+    outerClothing: ClothingOuterHardsuitPhoenix
     shoes: ClothingShoesCombatMaxTac
     id: PhoenixOperativePDA
     suitstorage: AirTankFilled

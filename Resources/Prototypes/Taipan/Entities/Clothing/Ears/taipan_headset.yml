@@ -48,3 +48,18 @@
     sprite: Taipan/Clothing/Ears/Headsets/hs_taipan.rsi
   - type: Clothing
     sprite: Taipan/Clothing/Ears/Headsets/hs_taipan.rsi
+
+- type: entity
+  parent: ClothingHeadsetAltTaipan
+  id: ClothingHeadsetAltTaipanDSS
+  name: полноразмерная гарнитура ДСБ
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyTaipan
+      - EncryptionKeySyndie
+  - type: Sprite
+    sprite: Taipan/Clothing/Ears/Headsets/hs_taipan.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/Ears/Headsets/hs_taipan.rsi

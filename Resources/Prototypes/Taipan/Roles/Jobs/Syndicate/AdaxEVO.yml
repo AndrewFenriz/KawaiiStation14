@@ -9,7 +9,7 @@
   supervisors: job-supervisors-taipan-command
   canBeAntag: false
   accessGroups:
-  - AllAccess
+  - TaipanAccess
   access:
   - TaipanCommand
   - TaipanScience
@@ -22,10 +22,10 @@
     back: ClothingMilitaryBackpack
     mask: ClothingMaskGasExplorer
     eyes: ClothingEyesHudAdvanced
-    ears: ClothingHeadsetSOC
+    ears: ClothingHeadsetAltTaipanDSS
     neck: ClothingNeckMantleAdaxEVOLeader
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitCBURNLeader
+    outerClothing: ClothingOuterHardsuitAdaxEVOLeader
     shoes: ClothingShoesBootsCombatFilled
     id: CBURNLeaderPDA
     suitstorage: AirTankFilled
@@ -60,7 +60,7 @@
   supervisors: job-supervisors-taipan-command
   canBeAntag: false
   accessGroups:
-  - AllAccess
+  - TaipanAccess
   access:
   - TaipanCommand
   - TaipanScience
@@ -73,9 +73,9 @@
     back: ClothingMilitaryBackpack
     mask: ClothingMaskGasExplorer
     eyes: ClothingEyesHudAdvanced
-    ears: ClothingHeadsetSOC
+    ears: ClothingHeadsetAltTaipanDSS
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitCBURN
+    outerClothing: ClothingOuterHardsuitAdaxEVOAgent
     shoes: ClothingShoesBootsCombatFilled
     id: CBURNPDA
     suitstorage: AirTankFilled

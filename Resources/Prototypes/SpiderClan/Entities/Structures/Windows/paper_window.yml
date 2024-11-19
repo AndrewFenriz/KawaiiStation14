@@ -1,0 +1,90 @@
+- type: entity
+  id: PaperWindow
+  name: бумажное окно
+  description: Только не подносите спичку!
+  parent: TintedWindow
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: SpiderClan/Structures/Windows/paper_window.rsi
+  - type: Icon
+    sprite: SpiderClan/Structures/Windows/paper_window.rsi
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Inflatable
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/boxingpunch1.ogg"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+        - !type:PlaySoundBehavior
+          sound:
+            path: /Audio/Effects/poster_broken.ogg
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            SheetPaper1:
+              min: 1
+              max: 2
+  - type: IconSmooth
+    base: pwindow
+  - type: Construction
+    graph: PaperWindow
+    node: start
+  - type: Appearance
+  # - type: DamageVisuals
+    # thresholds: [20]
+    # damageDivisor: 2
+    # trackAllDamage: true
+    # damageOverlay:
+      # sprite: SpiderClan/Structures/Windows/cracks.rsi
+
+- type: construction
+  name: бумажное окно
+  id: PaperWindow
+  graph: PaperWindow
+  startNode: start
+  targetNode: paperWindow
+  category: construction-category-structures
+  canBuildInImpassable: true
+  description: Только не подносите спичку!
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  icon:
+    sprite: SpiderClan/Structures/Windows/paper_window.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
+- type: constructionGraph
+  id: PaperWindow
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: paperWindow
+          steps:
+            - material: Paper
+              amount: 2
+              doAfter: 2
+    - node: paperWindow
+      entity: PaperWindow
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetPaper1
+              amount: 2
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Cutting
+              doAfter: 5
