@@ -14,6 +14,8 @@ public sealed partial class ResearchServerComponent : Component
     [DataField("serverName"), ViewVariables(VVAccess.ReadWrite)]
     public string ServerName = "RDSERVER";
 
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public bool isTaipan;
     /// <summary>
     /// The amount of points on the server.
     /// </summary>

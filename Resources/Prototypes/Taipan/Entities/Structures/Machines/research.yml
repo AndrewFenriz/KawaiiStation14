@@ -12,6 +12,7 @@
       - state: server_o
         map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: ResearchServer
+    isTaipan: true
   - type: TechnologyDatabase
     supportedDisciplines:
     - IndustrialTaipan
@@ -57,3 +58,31 @@
   - type: GuideHelp
     guides:
     - Science
+
+- type: entity
+  parent: MachineAnomalyVessel
+  id: MachineAnomalyVesselTaipan
+  suffix: Тайпан
+  components:
+  - type: ResearchClient
+    isTaipan: true
+  - type: Machine
+    board: MachineAnomalyVesselTaipanCircuitboard
+
+- type: entity
+  parent: MachineAnomalyVesselExperimental
+  id: AnomalyVesselExperimentalTaipan
+  suffix: Тайпан
+  components:
+  - type: ResearchClient
+    isTaipan: true
+  - type: Machine
+    board: AnomalyVesselExperimentalTaipanCircuitboard
+
+- type: entity
+  parent: BaseResearchAndDevelopmentPointSource
+  id: BaseResearchAndDevelopmentPointSourceTaipan
+  suffix: Тайпан
+  components:
+  - type: ResearchClient
+    isTaipan: true

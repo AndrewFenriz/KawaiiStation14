@@ -56,15 +56,21 @@ public sealed partial class ResearchSystem
 
     private void OnClientMapInit(EntityUid uid, ResearchClientComponent component, MapInitEvent args)
     {
+        var taipanServers = new List<Entity<ResearchServerComponent>>();
         var allServers = new List<Entity<ResearchServerComponent>>();
         var query = AllEntityQuery<ResearchServerComponent>();
         while (query.MoveNext(out var serverUid, out var serverComp))
         {
-            allServers.Add((serverUid, serverComp));
+            if (component.isTaipan && serverComp.isTaipan)
+                taipanServers.Add((serverUid, serverComp));
+            else if (!component.isTaipan && !serverComp.isTaipan)
+                allServers.Add((serverUid, serverComp));
         }
 
         if (allServers.Count > 0)
             RegisterClient(uid, allServers[0], component, allServers[0]);
+        if (taipanServers.Count > 0)
+            RegisterClient(uid, taipanServers[0], component, taipanServers[0]);
     }
 
     private void OnClientShutdown(EntityUid uid, ResearchClientComponent component, ComponentShutdown args)
@@ -86,7 +92,7 @@ public sealed partial class ResearchSystem
 
         var names = GetServerNames();
         var state = new ResearchClientBoundInterfaceState(names.Length, names,
-            GetServerIds(), serverComponent?.Id ?? -1);
+            GetServerIds(component.isTaipan), serverComponent?.Id ?? -1);
 
         _uiSystem.SetUiState(uid, ResearchClientUiKey.Key, state);
     }

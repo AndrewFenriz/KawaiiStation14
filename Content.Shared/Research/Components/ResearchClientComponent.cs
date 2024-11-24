@@ -10,6 +10,8 @@ namespace Content.Shared.Research.Components
     {
         public bool ConnectedToServer => Server != null;
 
+        [DataField, ViewVariables(VVAccess.ReadWrite)]
+        public bool isTaipan;
         /// <summary>
         /// The server the client is connected to
         /// </summary>

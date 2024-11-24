@@ -31,6 +31,8 @@
     walkModifier: 0.7
     sprintModifier: 0.7
   - type: HeldSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitTaipanAtmos
 
@@ -60,6 +62,8 @@
     walkModifier: 0.9
     sprintModifier: 0.8
   - type: HeldSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitTaipanTechOps
 
@@ -97,6 +101,8 @@
     walkModifier: 1.0
     sprintModifier: 0.9
   - type: HeldSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitTaipanComms
 
@@ -127,6 +133,8 @@
     walkModifier: 0.85
     sprintModifier: 0.85
   - type: HeldSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitTaipanParamedic
 
@@ -158,6 +166,8 @@
     walkModifier: 0.75
     sprintModifier: 0.75
   - type: HeldSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitTaipanRecruit
 
@@ -190,6 +200,8 @@
     walkModifier: 0.75
     sprintModifier: 0.75
   - type: HeldSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: Item
     size: Huge
   - type: ToggleableClothing
@@ -224,6 +236,8 @@
     walkModifier: 0.7
     sprintModifier: 0.7
   - type: HeldSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitTaipanEngineer
 
@@ -256,20 +270,22 @@
     walkModifier: 0.75
     sprintModifier: 0.75
   - type: HeldSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitTaipanCargotech
 
-# Requiem Leader Hardsuit
+# SMU Leader
 - type: entity
-  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
-  id: ClothingOuterHardsuitRequiemLeader
-  name: Скафандр лидера Реквием
-  description: Защитный костюм, носимый лидером команды быстрого реагирования Реквием.
+  parent: ClothingOuterHardsuitSyndieCommander
+  id: ClothingOuterHardsuitSMULeader
+  name: Скафандр лидера СМП
+  description: Защитный костюм, носимый лидером специального мобильного подразделения Синдиката.
   components:
   - type: Sprite
-    sprite: Taipan/Clothing/OuterClothing/Hardsuits/requiemleader.rsi
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/smuleader.rsi
   - type: Clothing
-    sprite: Taipan/Clothing/OuterClothing/Hardsuits/requiemleader.rsi
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/smuleader.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -288,24 +304,22 @@
     walkModifier: 1.0
     sprintModifier: 1.0
   - type: HeldSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitRequiemLeader
-  # - type: HardsuitIdentification
-  - type: Speech
-  # - type: TTS
-    # voice: Glados
+    clothingPrototype: ClothingHeadHelmetHardsuitSMULeader
 
-# Requiem Hardsuit
+# SMU Hardsuit
 - type: entity
-  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
-  id: ClothingOuterHardsuitRequiem
-  name: Скафандр Реквием
-  description: Защитный костюм для оперативников команды быстрого реагирования Реквием.
+  parent: ClothingOuterHardsuitSyndie
+  id: ClothingOuterHardsuitSMU
+  name: Скафандр СМП
+  description: Защитный костюм для оперативников специального мобильного подразделения Синдиката.
   components:
   - type: Sprite
-    sprite: Taipan/Clothing/OuterClothing/Hardsuits/requiem.rsi
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/smuoperative.rsi
   - type: Clothing
-    sprite: Taipan/Clothing/OuterClothing/Hardsuits/requiem.rsi
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/smuoperative.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -324,92 +338,44 @@
     walkModifier: 0.9
     sprintModifier: 0.9
   - type: HeldSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitRequiem
-  - type: Tag
-    tags:
-    - Hardsuit
-    - WhitelistChameleon
-  # - type: HardsuitIdentification
-  - type: Speech
-  # - type: TTS
-    # voice: Glados
+    clothingPrototype: ClothingHeadHelmetHardsuitSMU
 
-# Phoenix Leader Hardsuit
+# SMU Medic
 - type: entity
-  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
-  id: ClothingOuterHardsuitPhoenixLeader
-  name: Скафандр лидера Феникс
-  description: Защитный костюм, носимый лидером самого мощного отряда быстрого реагирования Феникс.
+  parent: ClothingOuterHardsuitSyndieMedic
+  id: ClothingOuterHardsuitSMUMedic
+  name: скафандр медика СМП
+  description: Лёгкий скафандр медика специального мобильного подразделения Синдиката.
   components:
   - type: Sprite
-    sprite: Taipan/Clothing/OuterClothing/Hardsuits/phoenixleader.rsi
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/smumedic.rsi
   - type: Clothing
-    sprite: Taipan/Clothing/OuterClothing/Hardsuits/phoenixleader.rsi
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/smumedic.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitSMUMedic
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
-    damageCoefficient: 0.3
+    damageCoefficient: 0.5
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.2
-        Heat: 0.4
-        Radiation: 0.2
-        Caustic: 0.3
-  - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitPhoenixLeader
-  # - type: HardsuitIdentification
-  - type: Speech
-  # - type: TTS
-    # voice: Glados
-
-# Phoenix Hardsuit
-- type: entity
-  parent: [ BaseSyndicateContraband, ClothingOuterHardsuitBase ]
-  id: ClothingOuterHardsuitPhoenix
-  name: Скафандр Феникс
-  description: Защитный костюм для оперативников самого мощного отряда быстрого реагирования Феникс.
-  components:
-  - type: Sprite
-    sprite: Taipan/Clothing/OuterClothing/Hardsuits/phoenix.rsi
-  - type: Clothing
-    sprite: Taipan/Clothing/OuterClothing/Hardsuits/phoenix.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.3
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.3
-        Heat: 0.4
-        Radiation: 0.4
-        Caustic: 0.4
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Radiation: 0.5
+        Caustic: 0.5
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
   - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitPhoenix
-  - type: Tag
-    tags:
-    - Hardsuit
-    - WhitelistChameleon
-  # - type: HardsuitIdentification
-  - type: Speech
-  # - type: TTS
-    # voice: Glados
+    walkModifier: 0.9
+    sprintModifier: 0.9
 
 # Adax EVO Leader Hardsuit
 - type: entity
@@ -444,9 +410,10 @@
     walkModifier: 1.0
     sprintModifier: 1.0
   - type: HeldSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetAdaxEVOLeader
-  # - type: HardsuitIdentification
 
 # Adax EVO Agent Hardsuit
 - type: entity
@@ -482,6 +449,46 @@
     walkModifier: 1.0
     sprintModifier: 1.0
   - type: HeldSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetAdaxEVOAgent
-  # - type: HardsuitIdentification
+
+# Executioner
+- type: entity
+  parent: ClothingOuterHardsuitSyndieCommander
+  id: ClothingOuterHardsuitExecutioner
+  name: скафандр Карателя
+  description: Тяжёлый бронескафандр, защищающий от большинства встречаемых видов повреждений, обеспечивающий максимальную защиту носителю.
+  components:
+  - type: Sprite
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/executioner.rsi
+  - type: Clothing
+    sprite: Taipan/Clothing/OuterClothing/Hardsuits/executioner.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.1 # best armor in the game
+        Slash: 0.1
+        Piercing: 0.1
+        Heat: 0.1
+        Radiation: 0.1
+        Caustic: 0.1
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitExecutioner

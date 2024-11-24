@@ -203,19 +203,6 @@
         Cable: 2
 
 - type: entity
-  id: MicrowaveMachineCircuitboardTaipan
-  parent: BaseMachineCircuitboardTaipan
-  name: микроволновка (машинная плата)
-  description: Печатная плата микроволновки.
-  components:
-    - type: MachineBoard
-      prototype: MicrowaveTaipan
-      stackRequirements:
-        Capacitor: 1
-        Glass: 2
-        Cable: 2
-
-- type: entity
   id: CargoTelepadMachineCircuitboardTaipan
   parent: BaseMachineCircuitboardTaipan
   name: грузовой телепад (машинная плата)

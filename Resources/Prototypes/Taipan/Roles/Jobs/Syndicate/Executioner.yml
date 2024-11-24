@@ -63,24 +63,24 @@
   name: РПС карателя
   description: РПС члена отряда элитной эвакуации.
 
-- type: entity
-  parent: ClothingHeadset
-  id: ClothingHeadsetExecutioner
-  name: мастер гарнитура карателя
-  description: Уникальный образец гарнитуры с доступом во все каналы.
-  suffix: Каратель
-  components:
-  - type: ContainerFill
-    containers:
-      key_slots:
-      - EncryptionKeySOC
-      - EncryptionKeyCentCom
-      - EncryptionKeyStationMaster
-      - EncryptionKeyFreelance
-      - EncryptionKeyExecutioner
-  - type: Sprite
-    sprite: Clothing/Ears/Headsets/base.rsi
-  - type: Clothing
-    sprite: Clothing/Ears/Headsets/base.rsi
-  - type: Headset
-    color: "#CF1CFF"
+# - type: entity
+  # parent: ClothingHeadset
+  # id: ClothingHeadsetExecutioner
+  # name: мастер гарнитура карателя
+  # description: Уникальный образец гарнитуры с доступом во все каналы.
+  # suffix: Каратель
+  # components:
+  # - type: ContainerFill
+    # containers:
+      # key_slots:
+      # - EncryptionKeySOC
+      # - EncryptionKeyCentCom
+      # - EncryptionKeyStationMaster
+      # - EncryptionKeyFreelance
+      # - EncryptionKeyExecutioner
+  # - type: Sprite
+    # sprite: Clothing/Ears/Headsets/base.rsi
+  # - type: Clothing
+    # sprite: Clothing/Ears/Headsets/base.rsi
+  # - type: Headset
+    # color: "#CF1CFF"

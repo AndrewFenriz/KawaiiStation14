@@ -36,7 +36,7 @@
   - type: PointLight
     radius: 1.5
     energy: 1.6
-    color: "#b89f25"
+    color: "#8B0000"  # Кровавый оттенок
   - type: AccessReader
     access: [["Cargo"]]
   - type: DeviceNetwork
@@ -86,7 +86,7 @@
   - type: PointLight
     radius: 1.5
     energy: 1.6
-    color: "#b89f25"
+    color: "#8B0000"  # Кровавый оттенок
   - type: AccessReader
     access: [["Quartermaster"]]
   - type: GuideHelp
@@ -115,6 +115,7 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: ResearchClient
+    isTaipan: true
   - type: ResearchConsole
   - type: ActiveRadio
     channels:
@@ -139,7 +140,7 @@
   - type: PointLight
     radius: 1.5
     energy: 1.6
-    color: "#b53ca1"
+    color: "#8B0000"  # Кровавый оттенок
   - type: GuideHelp
     guides:
     - Science
@@ -167,7 +168,7 @@
   - type: PointLight
     radius: 1.5
     energy: 1.6
-    color: "#006400"
+    color: "#8B0000"  # Кровавый оттенок
   - type: Computer
     board: CrewMonitoringComputerCircuitboardTaipan
   - type: ActivatableUI
@@ -206,6 +207,7 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: ResearchClient
+    isTaipan: true
   - type: AnalysisConsole
     reportEntityId: PaperArtifactAnalyzer
   - type: DeviceList
@@ -232,7 +234,46 @@
   - type: PointLight
     radius: 1.5
     energy: 1.6
-    color: "#b53ca1"
+    color: "#8B0000"  # Кровавый оттенок
   - type: GuideHelp
     guides:
     - Xenoarchaeology
+
+- type: entity
+  parent: BaseComputerAiAccess
+  id: ComputerShuttleTaipan
+  name: консоль управления шаттлом
+  suffix: Тайпан
+  description: Используется для пилотирования шаттла.
+  components:
+  - type: Sprite
+    sprite: Taipan/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: shuttle
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: Tag
+    tags:
+      - Taipan
+  - type: ShuttleConsole
+  - type: ActivatableUI
+    key: enum.ShuttleConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ShuttleConsoleUiKey.Key:
+        type: ShuttleConsoleBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Computer
+    board: ShuttleControlCircuitboardTaipan
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#8B0000"  # Кровавый оттенок
