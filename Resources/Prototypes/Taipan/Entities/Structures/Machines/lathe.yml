@@ -1,4 +1,4 @@
-- type: entity
+- type: entity #автолат
   id: AutolatheTaipan
   parent: BaseLatheLube
   name: автолат
@@ -153,7 +153,7 @@
     containers:
     - blueprint
 
-- type: entity
+- type: entity #гк автолат
   id: AutolatheHyperConvectionTaipan
   parent: [AutolatheTaipan, BaseHyperlathe]
   name: гиперконвекционный автолат
@@ -167,7 +167,7 @@
   - type: ResearchClient
     isTaipan: true
 
-- type: entity
+- type: entity #протолат
   id: ProtolatheTaipan
   parent: BaseLatheLube
   name: протолат
@@ -313,7 +313,7 @@
       - WeaponLaserCarbine
       - WeaponXrayCannon
 
-- type: entity
+- type: entity #гк протолат
   id: ProtolatheHyperConvectionTaipan
   parent: [ProtolatheTaipan, BaseHyperlathe]
   name: гиперконвекционный протолат
@@ -327,7 +327,7 @@
   - type: ResearchClient
     isTaipan: true
 
-- type: entity
+- type: entity #принтер схем
   id: CircuitImprinterTaipan
   parent: BaseLatheLube
   name: принтер схем
@@ -389,7 +389,7 @@
       - VaccinatorMachineCircuitboard
       - DiagnoserMachineCircuitboard
       - BiomassReclaimerMachineCircuitboard
-      - BiofabricatorMachineCircuitboard
+      - BiofabricatorMachineCircuitboardTaipan
       - SurveillanceCameraRouterCircuitboard
       - SurveillanceCameraMonitorCircuitboard
       - SurveillanceWirelessCameraMonitorCircuitboard
@@ -462,7 +462,7 @@
         - Ingot
   - type: RequireProjectileTarget
 
-- type: entity
+- type: entity #гк принтер схем
   id: CircuitImprinterHyperConvectionTaipan
   parent: [CircuitImprinterTaipan, BaseHyperlathe]
   name: гиперконвекционный принтер схем
@@ -476,7 +476,7 @@
   - type: ResearchClient
     isTaipan: true
 
-- type: entity
+- type: entity #фабрикатор экзокостюмов
   id: ExosuitFabricatorTaipan
   parent: BaseLatheLube
   name: фабрикатор экзокостюмов
@@ -593,3 +593,252 @@
   - type: GuideHelp
     guides:
     - Robotics
+
+- type: entity #фабрикатор биокубов
+  id: BiofabricatorTaipan
+  parent: BaseLathe
+  name: фабрикатор биокубов
+  suffix: Тайпан
+  description: Производит кубы животных, используя биомассу
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/biofabricator.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+      color: "#ffaa99"
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      color: "#ffaaaa"
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+      color: "#ffaaaa"
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: BiofabricatorMachineCircuitboardTaipan
+  - type: MaterialStorage
+    ignoreColor: true
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+  - type: ResearchClient
+    isTaipan: true
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticRecipes:
+    - MonkeyCube
+    - KoboldCube
+    - CowCube
+    - GoatCube
+    - MothroachCube
+    - MouseCube
+    - CockroachCube
+    dynamicRecipes:
+    - AbominationCube
+    - SpaceCarpCube
+    - SpaceTickCube
+
+- type: entity #медицинский техфаб
+  id: MedicalTechFabTaipan
+  parent: BaseLatheLube
+  name: медицинский техфаб
+  suffix: Тайпан
+  description: Печатает инветнарь для медицинского отсека.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: med
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: ResearchClient
+    isTaipan: true
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    staticRecipes:
+      - Brutepack
+      - Ointment
+      - Gauze
+      - HandLabeler
+      - Defibrillator
+      - HandheldHealthAnalyzer
+      - ClothingHandsGlovesLatex
+      - ClothingHandsGlovesNitrile
+      - ClothingMaskSterile
+      - DiseaseSwab
+      - Beaker
+      - LargeBeaker
+      - Dropper
+      - Jug
+      - Syringe
+      - Implanter
+      - PillCanister
+      - BodyBag
+      - ChemistryEmptyBottle01
+      - RollerBedSpawnFolded
+      - CheapRollerBedSpawnFolded
+      - EmergencyRollerBedSpawnFolded
+      - Medkit
+      - MedkitBurn
+      - MedkitToxin
+      - MedkitO2
+      - MedkitBrute
+      - MedkitAdvanced
+      - MedkitRadiation
+      - MedkitCombat
+      - Scalpel
+      - Retractor
+      - Cautery
+      - Drill
+      - Saw
+      - Hemostat
+      - ClothingEyesGlassesChemical
+      - WhiteCane
+    dynamicRecipes:
+      - ChemicalPayload
+      - CryostasisBeaker
+      - BluespaceBeaker
+      - SyringeBluespace
+      - SyringeCryostasis
+  - type: Machine
+    board: MedicalTechFabCircuitboardTaipan
+  - type: StealTarget
+    stealGroup: MedicalTechFabCircuitboard
+
+- type: entity #охранный техфаб
+  id: SecurityTechFabTaipan
+  parent: BaseLatheLube
+  name: охранный техфаб
+  description: Печатает инвентарь для охранного отсека.
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: sec
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: SecurityTechFabCircuitboardTaipan
+  - type: ResearchClient
+    isTaipan: true
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    staticRecipes:
+      - BoxLethalshot
+      - BoxShotgunPractice
+      - BoxShotgunSlug
+      - ClothingEyesHudSecurity
+      - CombatKnife
+      - Flash
+      - ForensicPad
+      - Handcuffs
+      - MagazineBoxLightRifle
+      - MagazineBoxLightRiflePractice
+      - MagazineBoxMagnum
+      - MagazineBoxMagnumPractice
+      - MagazineBoxPistol
+      - MagazineBoxPistolPractice
+      - MagazineBoxRifle
+      - MagazineBoxRiflePractice
+      - MagazineLightRifle
+      - MagazineLightRifleEmpty
+      - MagazinePistol
+      - MagazinePistolEmpty
+      - MagazinePistolSubMachineGun
+      - MagazinePistolSubMachineGunEmpty
+      - MagazinePistolSubMachineGunTopMounted
+      - MagazinePistolSubMachineGunTopMountedEmpty
+      - MagazineRifle
+      - MagazineRifleEmpty
+      - MagazineShotgun
+      - MagazineShotgunEmpty
+      - MagazineShotgunSlug
+      - RiotShield
+      - SpeedLoaderMagnum
+      - SpeedLoaderMagnumEmpty
+      - Stunbaton
+      - TargetClown
+      - TargetHuman
+      - TargetSyndicate
+      - WeaponDisablerPractice
+      - WeaponFlareGunSecurity
+      - WeaponLaserCarbinePractice
+      - Zipties
+    dynamicRecipes:
+      - BoxBeanbag
+      - BoxShotgunIncendiary
+      - BoxShotgunUranium
+      - BoxShellTranquilizer
+      - ClothingBackpackElectropack
+      - ExplosivePayload
+      - FlashPayload
+      - GrenadeBlast
+      - GrenadeEMP
+      - GrenadeFlash
+      - HoloprojectorSecurity
+      - MagazineBoxLightRifleIncendiary
+      - MagazineBoxLightRifleUranium
+      - MagazineBoxMagnumIncendiary
+      - MagazineBoxMagnumUranium
+      - MagazineBoxPistolIncendiary
+      - MagazineBoxPistolUranium
+      - MagazineBoxRifleIncendiary
+      - MagazineBoxRifleUranium
+      - MagazineGrenadeEmpty
+      - MagazineLightRifleIncendiary
+      - MagazineLightRifleUranium
+      - MagazinePistolIncendiary
+      - MagazinePistolUranium
+      - MagazineRifleIncendiary
+      - MagazineRifleUranium
+      - MagazineShotgunBeanbag
+      - MagazineShotgunIncendiary
+      - PortableRecharger
+      - PowerCageHigh
+      - PowerCageMedium
+      - PowerCageSmall
+      - ShuttleGunDusterCircuitboard
+      - ShuttleGunFriendshipCircuitboard
+      - ShuttleGunPerforatorCircuitboard
+      - ShuttleGunSvalinnMachineGunCircuitboard
+      - Signaller
+      - SignalTrigger
+      - SpeedLoaderMagnumIncendiary
+      - SpeedLoaderMagnumUranium
+      - TelescopicShield
+      - TimerTrigger
+      - Truncheon
+      - VoiceTrigger
+      - WeaponAdvancedLaser
+      - WeaponDisabler
+      - WeaponDisablerSMG
+      - WeaponLaserCannon
+      - WeaponLaserCarbine
+      - WeaponXrayCannon
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
