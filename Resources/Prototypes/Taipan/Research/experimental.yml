@@ -1,7 +1,7 @@
 # # Tier 1
 
 # - type: technology #синди робототехника
-  # id: BasicRobotics
+  # id: BasicRoboticsTaipan
   # name: research-technology-basic-robotics
   # icon:
     # sprite: Structures/Machines/exosuit_fabricator.rsi
@@ -14,7 +14,7 @@
   # - ExosuitFabricatorMachineCircuitboard
 
 - type: technology
-  id: BasicAnomalousResearch
+  id: BasicAnomalousResearchTaipan
   name: research-technology-basic-anomalous-research
   icon:
     sprite: Objects/Specific/Research/anomalyscanner.rsi
@@ -31,7 +31,7 @@
   - AnomalyVesselCircuitboard
 
 - type: technology
-  id: BasicXenoArcheology
+  id: BasicXenoArcheologyTaipan
   name: research-technology-basic-xenoarcheology
   icon:
     sprite: Structures/Machines/artifact_analyzer.rsi
@@ -46,7 +46,7 @@
   - ArtifactAnalyzerMachineCircuitboard
 
 - type: technology
-  id: AlternativeResearch
+  id: AlternativeResearchTaipan
   name: research-technology-alternative-research
   icon:
     sprite: Structures/Machines/tech_disk_printer.rsi
@@ -71,7 +71,7 @@
   # - ClothingShoesBootsMoon
 
 - type: technology
-  id: AnomalyCoreHarnessing
+  id: AnomalyCoreHarnessingTaipan
   name: research-technology-anomaly-harnessing
   icon:
     sprite: Objects/Weapons/Melee/gorilla.rsi
@@ -85,7 +85,7 @@
 # # Tier 2
 
 - type: technology
-  id: AbnormalArtifactManipulation
+  id: AbnormalArtifactManipulationTaipan
   name: research-technology-abnormal-artifact-manipulation
   icon:
     sprite: Structures/Machines/artifact_crusher.rsi
@@ -97,7 +97,7 @@
   - ArtifactCrusherMachineCircuitboard
 
 - type: technology
-  id: AdvancedAnomalyResearch
+  id: AdvancedAnomalyResearchTaipan
   name: research-technology-advanced-anomaly-research
   icon:
     sprite: Structures/Machines/anomaly_sync.rsi
@@ -113,7 +113,7 @@
   - BasicAnomalousResearch
 
 - type: technology
-  id: DeterrenceTechnologies
+  id: DeterrenceTechnologiesTaipan
   name: research-technology-deterrence
   icon:
     sprite: Objects/Weapons/Guns/Battery/particle_decelerator.rsi
@@ -132,7 +132,7 @@
 # # Tier 3
 
 - type: technology
-  id: GravityManipulation
+  id: GravityManipulationTaipan
   name: research-technology-gravity-manipulation
   icon:
     sprite: Objects/Weapons/Guns/Launchers/tether_gun.rsi
@@ -145,7 +145,7 @@
     - WeaponTetherGun
 
 - type: technology
-  id: QuantumLeaping
+  id: QuantumLeapingTaipan
   name: research-technology-quantum-leaping
   icon:
     sprite: Objects/Devices/swapper.rsi

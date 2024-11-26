@@ -722,6 +722,7 @@
   id: SecurityTechFabTaipan
   parent: BaseLatheLube
   name: охранный техфаб
+  suffix: Тайпан
   description: Печатает инвентарь для охранного отсека.
   components:
   - type: Sprite
