@@ -1,7 +1,7 @@
 # # Tier 1
 
 - type: technology
-  id: Hydroponics
+  id: HydroponicsTaipan
   name: research-technology-basic-hydroponics
   icon:
     sprite: Structures/Machines/seed_extractor.rsi
@@ -17,7 +17,7 @@
   - ReagentGrinderIndustrialMachineCircuitboard
 
 - type: technology
-  id: RoboticCleanliness
+  id: RoboticCleanlinessTaipan
   name: research-technology-robotic-cleanliness
   icon:
     sprite: Mobs/Silicon/chassis.rsi
@@ -30,7 +30,7 @@
   - BorgModuleAdvancedCleaning
 
 - type: technology
-  id: MeatManipulation
+  id: MeatManipulationTaipan
   name: research-technology-meat-manipulation
   icon:
     sprite: Structures/Machines/fat_sucker.rsi
@@ -54,7 +54,7 @@
 # # Tier 2
 
 - type: technology
-  id: FauxAstroTiles
+  id: FauxAstroTilesTaipan
   name: research-technology-faux-astro-tiles
   icon:
     sprite: Objects/Tiles/tile.rsi
@@ -70,7 +70,7 @@
   - FauxTileAstroSnow
 
 - type: technology
-  id: BiochemicalStasis
+  id: BiochemicalStasisTaipan
   name: research-technology-biochemical-stasis
   icon:
     sprite: Structures/Machines/stasis_bed.rsi
@@ -85,7 +85,7 @@
   - SyringeCryostasis
 
 - type: technology
-  id: MechanizedTreatment
+  id: MechanizedTreatmentTaipan
   name: research-technology-mechanized-treatment
   icon:
     sprite: Mobs/Silicon/chassis.rsi
@@ -98,7 +98,7 @@
   - BorgModuleDefibrillator
 
 - type: technology
-  id: AdvancedCleaning
+  id: AdvancedCleaningTaipan
   name: research-technology-advanced-cleaning
   icon:
     sprite: Objects/Specific/Janitorial/advmop.rsi
@@ -111,7 +111,7 @@
   - MegaSprayBottle
 
 - type: technology
-  id: BluespaceCargoTransport
+  id: BluespaceCargoTransportTaipan
   name: research-technology-bluespace-cargo-transport
   icon:
     sprite: Structures/cargo_telepad.rsi
@@ -133,7 +133,7 @@
 # # Tier 3
 
 - type: technology
-  id: QuantumFiberWeaving
+  id: QuantumFiberWeavingTaipan
   name: research-technology-quantum-fiber-weaving
   icon:
     sprite: Clothing/Shoes/Boots/speedboots.rsi
@@ -145,7 +145,7 @@
   - ClothingShoesBootsSpeed
 
 - type: technology
-  id: BluespaceChemistry
+  id: BluespaceChemistryTaipan
   name: research-technology-bluespace-chemistry
   icon:
     sprite: Objects/Specific/Chemistry/beaker_bluespace.rsi

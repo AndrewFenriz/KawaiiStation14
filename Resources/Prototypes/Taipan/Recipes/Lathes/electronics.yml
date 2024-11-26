@@ -20,20 +20,20 @@
   id: ProtolatheHyperConvectionMachineCircuitboardTaipanRecipe
   result: ProtolatheHyperConvectionMachineCircuitboardTaipan
 
-# - type: latheRecipe
-  # parent: BaseCircuitboardRecipe
-  # id: SecurityTechFabCircuitboardTaipanRecipe
-  # result: SecurityTechFabCircuitboardTaipan
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: SecurityTechFabCircuitboardTaipanRecipe
+  result: SecurityTechFabCircuitboardTaipan
 
 # - type: latheRecipe
   # parent: BaseCircuitboardRecipe
   # id: AmmoTechFabCircuitboardTaipanRecipe
   # result: AmmoTechFabCircuitboardTaipan
 
-# - type: latheRecipe
-  # parent: BaseCircuitboardRecipe
-  # id: MedicalTechFabCircuitboardTaipanRecipe
-  # result: MedicalTechFabCircuitboardTaipan
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: MedicalTechFabCircuitboardTaipanRecipe
+  result: MedicalTechFabCircuitboardTaipan
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe
@@ -64,6 +64,11 @@
   parent: BaseCircuitboardRecipe
   id: CargoTelepadMachineCircuitboardTaipanRecipe
   result: CargoTelepadMachineCircuitboardTaipan
+
+- type: latheRecipe #фабрикатор биокубов
+  parent: BaseCircuitboardRecipe
+  id: BiofabricatorMachineCircuitboardTaipanRecipe
+  result: BiofabricatorMachineCircuitboardTaipan
 
 # Recipes for Taipan computer circuit boards
 
@@ -141,3 +146,4 @@
   parent: BaseCircuitboardRecipe
   id: StationAiUploadCircuitboardTaipanRecipe
   result: StationAiUploadCircuitboardTaipan
+

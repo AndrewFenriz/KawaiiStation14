@@ -1,7 +1,7 @@
 # # Tier 1
 
 # - type: technology
-  # id: SalvageEquipment
+  # id: SalvageEquipmentTaipan
   # name: research-technology-salvage-equipment
   # icon:
     # sprite: Objects/Tools/handdrill.rsi
@@ -18,7 +18,7 @@
   # - ClothingMaskWeldingGas
 
 - type: technology
-  id: SpaceScanning
+  id: SpaceScanningTaipan
   name: research-technology-space-scanning
   icon:
     sprite: Objects/Tools/handheld_mass_scanner.rsi
@@ -32,7 +32,7 @@
   - BorgModuleGPS
 
 - type: technology
-  id: AdvancedPowercells
+  id: AdvancedPowercellsTaipan
   name: research-technology-advanced-powercells
   icon:
     sprite: Structures/Power/turbo_recharger.rsi
@@ -45,7 +45,7 @@
   - TurboItemRechargerCircuitboard
 
 - type: technology
-  id: MechanicalCompression
+  id: MechanicalCompressionTaipan
   name: research-technology-mechanical-compression
   icon:
     sprite: Structures/Machines/flatpacker.rsi
@@ -57,7 +57,7 @@
   - FlatpackerMachineCircuitboard
 
 - type: technology
-  id: IndustrialEngineering
+  id: IndustrialEngineeringTaipan
   name: research-technology-industrial-engineering
   icon:
     sprite: Structures/Machines/protolathe_hypercon.rsi
@@ -72,7 +72,7 @@
   - SheetifierMachineCircuitboard
 
 - type: technology
-  id: PowerGeneration
+  id: PowerGenerationTaipan
   name: research-technology-power-generation
   icon:
     sprite: Structures/Power/Generation/portable_generator.rsi
@@ -90,7 +90,7 @@
   - EmitterCircuitboard
 
 - type: technology
-  id: AtmosphericTech
+  id: AtmosphericTechTaipan
   name: research-technology-atmospheric-tech
   icon:
     sprite: Structures/Piping/Atmospherics/thermomachine.rsi
@@ -103,7 +103,7 @@
   - GasRecyclerMachineCircuitboard
 
 # - type: technology #синди рипли
-  # id: RipleyAPLU
+  # id: RipleyAPLUTaipan
   # name: research-technology-ripley-aplu
   # icon:
     # sprite: Objects/Specific/Mech/mecha.rsi
@@ -126,7 +126,7 @@
 # # Tier 2
 
 # - type: technology #синди шаттлостроение
-  # id: Shuttlecraft
+  # id: ShuttlecraftTaipan
   # name: research-technology-shuttlecraft
   # icon:
     # sprite: Structures/Shuttles/gyroscope.rsi
@@ -141,7 +141,7 @@
   # - MiniGravityGeneratorCircuitboard
 
 - type: technology
-  id: AdvancedAtmospherics
+  id: AdvancedAtmosphericsTaipan
   name: research-technology-advanced-atmospherics
   icon:
     sprite: Objects/Devices/Holoprojectors/atmos.rsi
@@ -157,7 +157,7 @@
   - AtmosphericTech
 
 # - type: technology #синди инструменты
-  # id: AdvancedToolsTechnology
+  # id: AdvancedToolsTechnologyTaipan
   # name: research-technology-advanced-tools
   # icon:
     # sprite: Objects/Tools/welder_experimental.rsi
@@ -173,7 +173,7 @@
     # - BorgModuleRCD
 
 - type: technology
-  id: MassExcavation
+  id: MassExcavationTaipan
   name: research-technology-excavation
   icon:
     sprite: Objects/Tools/handdrilldiamond.rsi
@@ -192,7 +192,7 @@
 # # Tier 3
 
 - type: technology
-  id: BluespaceStorage
+  id: BluespaceStorageTaipan
   name: research-technology-bluespace-storage
   icon:
     sprite: Clothing/Back/Backpacks/holding.rsi
@@ -206,7 +206,7 @@
   - ClothingBackpackDuffelHolding
 
 - type: technology
-  id: PortableFission
+  id: PortableFissionTaipan
   name: research-technology-portable-fission
   icon:
     sprite: Objects/Power/power_cells.rsi

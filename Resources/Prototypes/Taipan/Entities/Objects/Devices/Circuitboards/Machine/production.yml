@@ -85,21 +85,21 @@
           amount: 1
           defaultPrototype: Igniter
 
-# - type: entity
-  # id: SecurityTechFabCircuitboardTaipan
-  # parent: BaseMachineCircuitboardTaipan
-  # name: охранный ТехФаб (машинная плата)
-  # description: Печатная плата охранного ТехФаба.
-  # components:
-    # - type: MachineBoard
-      # prototype: SecurityTechFabTaipan
-      # stackRequirements:
-        # MatterBin: 2
-        # Manipulator: 2
-      # tagRequirements:
-        # GlassBeaker:
-          # amount: 2
-          # defaultPrototype: Beaker
+- type: entity
+  id: SecurityTechFabCircuitboardTaipan
+  parent: BaseMachineCircuitboardTaipan
+  name: охранный ТехФаб (машинная плата)
+  description: Печатная плата охранного ТехФаба.
+  components:
+    - type: MachineBoard
+      prototype: SecurityTechFabTaipan
+      stackRequirements:
+        MatterBin: 2
+        Manipulator: 2
+      tagRequirements:
+        GlassBeaker:
+          amount: 2
+          defaultPrototype: Beaker
 
 # - type: entity
   # id: AmmoTechFabCircuitboardTaipan
@@ -113,21 +113,21 @@
         # MatterBin: 1
         # Manipulator: 1
 
-# - type: entity
-  # id: MedicalTechFabCircuitboardTaipan
-  # parent: BaseMachineCircuitboardTaipan
-  # name: медицинский ТехФаб (машинная плата)
-  # description: Печатная плата медицинского ТехФаба.
-  # components:
-    # - type: MachineBoard
-      # prototype: MedicalTechFabTaipan
-      # stackRequirements:
-        # MatterBin: 2
-        # Manipulator: 2
-      # tagRequirements:
-        # GlassBeaker:
-          # amount: 2
-          # defaultPrototype: Beaker
+- type: entity
+  id: MedicalTechFabCircuitboardTaipan
+  parent: BaseMachineCircuitboardTaipan
+  name: медицинский ТехФаб (машинная плата)
+  description: Печатная плата медицинского ТехФаба.
+  components:
+    - type: MachineBoard
+      prototype: MedicalTechFabTaipan
+      stackRequirements:
+        MatterBin: 2
+        Manipulator: 2
+      tagRequirements:
+        GlassBeaker:
+          amount: 2
+          defaultPrototype: Beaker
 
 - type: entity
   id: CircuitImprinterMachineCircuitboardTaipan
@@ -213,3 +213,15 @@
       stackRequirements:
         Capacitor: 2
         Steel: 5
+
+- type: entity #фабрикатор биокубов
+  id: BiofabricatorMachineCircuitboardTaipan
+  parent: BaseMachineCircuitboardTaipan
+  name: фабрикатор биокубов (машинная плата)
+  description: Печатная плата фабрикатора биокубов.
+  components:
+    - type: MachineBoard
+      prototype: BiofabricatorTaipan
+      stackRequirements:
+        MatterBin: 4
+        Glass: 1
