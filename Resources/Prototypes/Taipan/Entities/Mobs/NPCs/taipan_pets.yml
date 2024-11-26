@@ -98,7 +98,7 @@
     layers:
     - state: green
     - state: snake
-      sprite: /Uploaded/animals/snake.rsi
+      sprite: Taipan/Mobs/ruzh.rsi
   - type: ConditionalSpawner
     prototypes:
     - MobSnakeSyndicate
@@ -112,7 +112,7 @@
     layers:
     - state: green
     - state: snake
-      sprite: /Uploaded/animals/snake.rsi
+      sprite: Taipan/Mobs/ruzh.rsi
   - type: ConditionalSpawner
     prototypes:
     - MobSnakeSyndicateRuzh
