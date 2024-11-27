@@ -132,3 +132,11 @@
   icon: { sprite: Objects/Materials/materials.rsi, state: diamond }
   color: "#80ffff"
   price: 20 # big diamond gaslit us so hard diamonds actually became extremely rare
+
+- type: material
+  id: Implanters
+  name: имплантеров
+  unit: шт.
+  icon: { sprite: Objects/Specific/Medical/implanter.rsi, state: implanter0 }
+  color: "#80ffff"
+  price: 0

@@ -225,3 +225,15 @@
       stackRequirements:
         MatterBin: 4
         Glass: 1
+
+- type: entity #заправщик имплантеров
+  id: ImplanterFillerCircuitboardTaipan
+  parent: BaseMachineCircuitboardTaipan
+  name: заправщик имплантеров (машинная плата)
+  description: Печатная плата заправщика имплантеров.
+  components:
+    - type: MachineBoard
+      prototype: ImplanterFillerTaipan
+      stackRequirements:
+        MatterBin: 4
+        Glass: 1
