@@ -53,6 +53,10 @@
           implantOnly:
             True: {state: broken}
             False: {state: implanter0}
+    - type: Material #для конструктора имплантов
+    - type: PhysicalComposition
+      materialComposition:
+        Implanters: 100
 
 - type: entity
   id: Implanter
@@ -61,6 +65,7 @@
   components:
     - type: Tag
       tags:
+        - Implanter
         - Trash
 
 - type: entity

@@ -1,0 +1,21 @@
+- type: latheRecipe #NT
+  abstract: true
+  id: BaseImplanterNTRecipe
+  completetime: 5
+
+#сами рецепты, какого то хуя нужно копипастить рецепты, иначе будут бесплатными
+
+- type: latheRecipe #Грустный тромбон
+  parent: BaseImplanterNTRecipe
+  id: SadTromboneImplanter
+  result: SadTromboneImplanter
+  materials:
+    Implanters: 100
+    Steel: 500
+    Plastic: 500
+    Glass: 1000
+
+# - type: latheRecipe #Свет
+#   parent: SadTromboneImplanter
+#   id: LightImplanter
+#   result: LightImplanter

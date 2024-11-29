@@ -725,6 +725,9 @@
 - type: Tag
   id: Ingredient
 
+- type: Tag
+  id: Implanter
+
 - type: Tag #Drop this innate tool instead of deleting it.
   id: InnateDontDelete
 
